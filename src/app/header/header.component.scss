@@ -1,0 +1,71 @@
+.header{
+  &__container{
+  display: flex;
+  flex-direction: column;
+  }
+  &__box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: lightgrey;
+  }
+  &__navigation {
+
+  }
+}
+.logo-header{
+
+  &__title {
+
+  }
+  a{
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+  }
+}
+
+.info-header {
+  &__phones {
+
+  }
+  &__emails {
+
+  }
+  &__socials {
+
+  }
+}
+
+.navigation-header {
+  background-color: grey;
+  *li{
+    list-style-type: none;
+  }
+  &__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  &__item {
+
+  }
+  &__link {
+    text-decoration: none;
+    color: black;
+    &:hover {
+      text-decoration: underline;
+      color: gold;
+      transition: 0.5s;
+    }
+  }
+}
+[class*=active] {
+  color: orange;
+}
+.emails-info__img {
+  width: 40px;
+  height: 40px;
+}

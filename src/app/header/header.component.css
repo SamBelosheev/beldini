@@ -1,0 +1,49 @@
+.header__container {
+  display: flex;
+  flex-direction: column;
+}
+.header__box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: lightgrey;
+}
+.logo-header a {
+  list-style-type: none;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+.navigation-header {
+  background-color: grey;
+}
+.navigation-header * li {
+  list-style-type: none;
+}
+.navigation-header__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.navigation-header__link {
+  text-decoration: none;
+  color: black;
+}
+.navigation-header__link:hover {
+  text-decoration: underline;
+  color: gold;
+  transition: 0.5s;
+}
+
+[class*=active] {
+  color: orange;
+}
+
+.emails-info__img {
+  width: 40px;
+  height: 40px;
+}
+
+/*# sourceMappingURL=header.component.css.map */

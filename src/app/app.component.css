@@ -1,0 +1,56 @@
+.html .body {
+  height: 100%;
+  min-width: 320px;
+}
+
+.body {
+  color: #000;
+  line-height: 1;
+  font-size: 1.125rem;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.btn {
+  cursor: pointer;
+  color: inherit;
+  background-color: inherit;
+}
+@media (any-hover: hover) {
+  .btn .button:hover {
+    box-shadow: 0 4px 25px rgba(232, 170, 49, 0.63);
+  }
+}
+
+a {
+  color: inherit;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+[class*=__container] {
+  max-width: 99.375rem;
+  box-sizing: content-box;
+  margin: 0 auto;
+  padding: 0 0.9375rem;
+}
+
+/*# sourceMappingURL=app.component.css.map */

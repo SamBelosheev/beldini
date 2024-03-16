@@ -1,0 +1,58 @@
+.core{
+  padding: 250px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__container {
+    display: flex;
+    flex-direction: column;
+  }
+  &__button {
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+    padding: 20px;
+    position: center;
+  }
+  &__paths{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+  }
+  &__strategy {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+    padding: 20px;
+    z-index: 1;
+  }
+  &__mind {
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+    padding: 20px;
+  }
+  &__survivel {
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+    padding: 20px;
+  }
+  &__adventure {
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+    padding: 20px;
+  }
+}
+
+.paths__link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}

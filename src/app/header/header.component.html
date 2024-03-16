@@ -1,0 +1,39 @@
+<div class="header__container">
+  <div class="header__box">
+    <div class="header__logo logo-header">
+      <h1 class="logo-header__title"><a [routerLink]="['/']">LOGO</a></h1>
+    </div>
+    <div class="header__name"><h1>Beldini</h1></div>
+    <div class="header__info info-header">
+      <div class="info-header__phones phones-info">
+        <img class="emails-info__img" src="{{ 'assets/icons/telegram.ico' }}" alt="mail">
+        <a class="phones-info__phone" href="tel:+79854905113">+7(985) 490-51-13</a>
+      </div>
+      <div class="info-header__emails emails-info">
+        <img class="emails-info__img" src="{{ 'assets/icons/telegram.ico' }}" alt="mail">
+        <a class="emails-info__email" href="mailto:beldini.ru@gmail.com">beldini.ru&#64;gmail.com</a>
+      </div>
+      <div class="info-header__socials socials-info">
+        <div class="socials-info__instagram">
+          <img class="emails-info__img" src="{{ 'assets/icons/instagram.ico' }}" alt="mail">
+        </div>
+        <div class="socials-info__telegram">
+          <img class="emails-info__img" src="{{ 'assets/icons/telegram.ico' }}" alt="mail">
+        </div>
+        <div class="socials-info__Viber">
+          <img class="emails-info__img" src="{{ 'assets/icons/viber.ico' }}" alt="mail">
+        </div>
+        <div class="socials-info__WhatsApp">
+          <img class="emails-info__img" src="{{ 'assets/icons/whatsapp.ico' }}" alt="mail">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="header__navigation navigation-header">
+    <ul class="navigation-header__list">
+      <li  class="navigation-header__item"><a routerLinkActive="active" class="navigation-header__link" [routerLink]="['/mind']">Company</a></li>
+      <li  class="navigation-header__item"><a routerLinkActive="active" class="navigation-header__link" [routerLink]="['/Company']">Products</a></li>
+      <li  class="navigation-header__item"><a routerLinkActive="active" class="navigation-header__link" [routerLink]="['/Library']">Library</a></li>
+    </ul>
+  </div>
+</div>

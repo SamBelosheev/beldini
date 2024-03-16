@@ -1,0 +1,59 @@
+.footer {
+  background-color: darkgray;
+  &__title {
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    padding: 10px 0;
+  }
+  &__box {
+
+  }
+
+}
+ .footer__container {
+    display: flex;
+   flex-direction: column;
+ }
+
+ .box-footer {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+   justify-items: center;
+   &__left {}
+   &__dragons {}
+   &__right {}
+ }
+
+ .left-footer{
+   &__logo {}
+   &__text {}
+ }
+
+ .right-footer {
+   *li{
+     list-style-type: none
+   }
+   &__list {
+
+   }
+   &__item {
+     padding: 5px 0;
+     text-decoration: none;
+     color: black;
+     &:hover {
+       text-decoration: underline;
+       color: gold;
+       transition: 0.5s;
+     }
+     &:active {
+       color: green !important;
+     }
+   }
+   &__link {
+   }
+ }
+.emails-info__img {
+  width: 35px;
+  height: 35px;
+}

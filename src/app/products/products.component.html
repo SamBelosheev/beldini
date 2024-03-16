@@ -1,0 +1,19 @@
+<div class="products-card__container">
+      <img class="products-card__img" [src]="product.image" [alt]="product.title">
+      <h2 class="products-card__title">{{ product.title | titlecase}}</h2>
+      <p class="products-card__price">???Нужен ли??? : {{ product.price | currency: 'RUB' }}</p>
+    <button class="products-card__button btn"
+            [ngClass]="{
+            'btn': !details,
+            'btn-dark': details,
+            }"
+            (click)="details = !details">
+      {{details ? 'Hide' : 'Show'}} more
+    </button>
+    <div *ngIf="details" class="products-card__details details-products">
+      <p class="details-products__description">{{ product.description }}</p>
+  </div>
+</div>
+
+
+
