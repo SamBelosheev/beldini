@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "gamesWorlds": {
+    "beldini": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -51,12 +51,9 @@
               "outputHashing": "all"
             },
             "development": {
-              "buildOptimizer": false,
               "optimization": false,
-              "vendorChunk": true,
               "extractLicenses": false,
-              "sourceMap": true,
-              "namedChunks": true
+              "sourceMap": true
             }
           },
           "defaultConfiguration": "production"
@@ -65,10 +62,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "gamesWorlds:build:production"
+              "buildTarget": "beldini:build:production"
             },
             "development": {
-              "buildTarget": "gamesWorlds:build:development"
+              "buildTarget": "beldini:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -76,7 +73,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "gamesWorlds:build"
+            "buildTarget": "beldini:build"
           }
         },
         "test": {
