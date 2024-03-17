@@ -96,7 +96,7 @@
           }
         },
         "deploy": {
-          "builder": "angular-cli-ghpages:deploy --base-href /beldini/"
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }
