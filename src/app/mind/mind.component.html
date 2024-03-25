@@ -1,10 +1,10 @@
 <div class="container">
 <div class="mainPage page__container">
+  <div class="page__title">
+    <h1>Beldini the best of the best</h1>
+  </div>
   <div class="page__up">
     <div class="page__left">
-      <div class="page__title">
-        <h1>Beldini the best of the best</h1>
-      </div>
       <div class="page__text">
         <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
           Delectus eos eveniet nam placeat quaerat qui veritatis! Debitis neque tempore voluptate.</h2>
@@ -16,7 +16,25 @@
     </div>
     <div class="page__right">
       <div class="page__slider">
-        <p>ТУТ БУДЕТ СЛАЙДЕР</p>
+        <div class="slider">
+          <input type="radio" name="switch" id="btn1" checked>
+          <input type="radio" name="switch" id="btn2">
+          <input type="radio" name="switch" id="btn3">
+
+          <div class="switch">
+            <label for="btn1"></label>
+            <label for="btn2"></label>
+            <label for="btn3"></label>
+          </div>
+
+          <div class="slider-inner">
+            <div class="slides">
+              <img class="emails-info__img" src="{{ 'assets/slide/1.jpg' }}" alt="mail">
+              <img class="emails-info__img" src="{{ 'assets/slide/2.jpg' }}" alt="mail">
+              <img class="emails-info__img" src="{{ 'assets/slide/3.jpg' }}" alt="mail">
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>

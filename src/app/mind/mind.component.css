@@ -1,3 +1,180 @@
+.mainPage {
+  background-color: black;
+}
 
+.page {
+  display: flex;
+  flex-direction: column;
+}
+.page__up {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 40px;
+}
+@media (max-width: 720px) {
+  .page__up {
+    flex-direction: column;
+  }
+}
+.page__left {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  max-width: 50%;
+}
+@media (max-width: 720px) {
+  .page__left {
+    max-width: 100%;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.page__title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  font-style: italic;
+  color: antiquewhite;
+}
+@media (max-width: 720px) {
+  .page__title {
+    font-size: 16px;
+  }
+}
+.page__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: antiquewhite;
+}
+.page__right {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  max-width: 50%;
+}
+@media (max-width: 720px) {
+  .page__right {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.page__slider {
+  display: flex;
+  border: 1px solid gold;
+  align-items: center;
+  color: antiquewhite;
+}
+.page__down {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-style: italic;
+  padding: 50px 100px;
+  color: antiquewhite;
+}
+@media (max-width: 720px) {
+  .page__down {
+    padding: 10px 20px;
+  }
+}
+
+.slider {
+  position: relative;
+  width: 580px;
+  margin: 50px auto;
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.75);
+}
+@media (max-width: 720px) {
+  .slider {
+    width: 380px;
+  }
+}
+
+.slider input[name=switch] {
+  display: none;
+}
+
+.switch {
+  position: absolute;
+  left: 0;
+  bottom: -40px;
+  text-align: center;
+  width: 100%;
+}
+
+.switch label {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  cursor: pointer;
+  margin: 0 3px;
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.8);
+  border-radius: 50%;
+  border: 5px solid #2f363c;
+  background-color: #738290;
+}
+
+#btn1:checked ~ .switch label[for=btn1] {
+  background-color: white;
+}
+
+#btn2:checked ~ .switch label[for=btn2] {
+  background-color: white;
+}
+
+#btn3:checked ~ .switch label[for=btn3] {
+  background-color: white;
+}
+
+.slider-inner {
+  overflow: hidden;
+}
+
+.slides {
+  width: 300%;
+  transition: all 0.5s;
+}
+
+.slides img {
+  width: 580px;
+  height: 340px;
+  float: left;
+}
+@media (max-width: 720px) {
+  .slides img {
+    width: 380px;
+    height: 240px;
+  }
+}
+
+#btn1:checked ~ slider-inner slides {
+  transform: translate(0);
+}
+
+#btn2:checked ~ .slider-inner .slides {
+  transform: translate(-580px);
+}
+@media (max-width: 720px) {
+  #btn2:checked ~ .slider-inner .slides {
+    transform: translate(-380px);
+  }
+}
+
+#btn3:checked ~ .slider-inner .slides {
+  transform: translate(-1160px);
+}
+@media (max-width: 720px) {
+  #btn3:checked ~ .slider-inner .slides {
+    transform: translate(-760px);
+  }
+}
 
 /*# sourceMappingURL=mind.component.css.map */

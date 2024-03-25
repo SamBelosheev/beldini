@@ -3,6 +3,11 @@
   margin-top: -40px;
   padding-bottom: 50px;
 }
+@media (max-width: 720px) {
+  .library {
+    padding-bottom: 10px;
+  }
+}
 .library__container {
   display: flex;
   flex-direction: column;
@@ -10,11 +15,18 @@
   padding: 40px 0;
   gap: 20px;
 }
+@media (max-width: 720px) {
+  .library__container {
+    padding: 0;
+    margin: 40px 20px;
+  }
+}
 .library__title {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: antiquewhite;
+  font-style: italic;
 }
 .library__box {
   border-radius: 5px;
@@ -33,55 +45,27 @@
 .library__name {
   margin: 0 20px;
 }
-.library__info {
-  cursor: pointer;
-  padding-left: 50px;
-}
-.library__text {
-  padding: 0 70px;
-}
-
-.library {
-  background-color: black;
-  margin-top: -40px;
-  padding-bottom: 50px;
-}
-.library__container {
-  display: flex;
-  flex-direction: column;
-  margin: 40px 100px;
-  padding: 40px 0;
-  gap: 20px;
-}
-.library__title {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-}
-.library__box {
-  border-radius: 5px;
-  border: 1px solid white;
-  background-color: antiquewhite;
-}
-.library__card {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  cursor: pointer;
-}
-.library__item {
-  margin: 0 20px;
-}
-.library__name {
-  margin: 0 20px;
+@media (max-width: 720px) {
+  .library__name {
+    margin: 0 5px;
+  }
 }
 .library__info {
   cursor: pointer;
   padding-left: 50px;
 }
+@media (max-width: 720px) {
+  .library__info {
+    padding-left: 10px;
+  }
+}
 .library__text {
   padding: 0 70px;
+}
+@media (max-width: 720px) {
+  .library__text {
+    padding-left: 20px;
+  }
 }
 
 /*# sourceMappingURL=survivel.component.css.map */

@@ -1,10 +1,11 @@
 .footer {
-  background-color: darkgray;
+  background-color: black;
   &__title {
     display: flex;
     justify-items: center;
     justify-content: center;
     padding: 10px 0;
+    color: antiquewhite;
   }
   &__box {
 
@@ -13,26 +14,34 @@
 }
  .footer__container {
     display: flex;
-   flex-direction: column;
+    flex-direction: column;
  }
 
  .box-footer {
    display: grid;
    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
    justify-items: center;
+
    &__left {}
-   &__dragons {}
+   &__map {
+     display: none;
+   }
    &__right {}
  }
 
  .left-footer{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 0 20px;
+   color: antiquewhite;
    &__logo {}
    &__text {}
  }
 
  .right-footer {
    *li{
-     list-style-type: none
+     list-style-type: none;
    }
    &__list {
 
@@ -41,16 +50,24 @@
      padding: 5px 0;
      text-decoration: none;
      color: black;
+     list-style-type: none;
+     display: flex;
+     align-items: center;
+     gap: 15px;
      &:hover {
        text-decoration: underline;
        color: gold;
        transition: 0.5s;
      }
-     &:active {
-       color: green !important;
-     }
    }
    &__link {
+     text-decoration: none;
+     list-style-type: none;
+     color: antiquewhite;
+     &:hover {
+       color: gold;
+       transition: 0.5s;
+     }
    }
  }
 .emails-info__img {
