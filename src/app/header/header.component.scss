@@ -87,12 +87,15 @@
   &__link {
     text-decoration: none;
     color: antiquewhite;
-    font-size: 24px;
+    font-size: 36px;
     font-style: italic;
     &:hover {
       text-decoration: underline;
       color: gold;
       transition: 0.5s;
+    }
+    @media (max-width: 420px) {
+      font-size: 24px;
     }
   }
 }
@@ -109,6 +112,7 @@
   flex-direction: row;
   gap: 20px;
   padding: 20px 0;
+  justify-content: center;
 }
 .phones-info__phone {
   text-decoration: none;
