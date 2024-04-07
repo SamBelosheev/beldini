@@ -11,4 +11,5 @@ import {IProduct} from "../models/models.component";
 })
 export class StrategyComponent {
   products: IProduct[] = data
+  show = false
 }

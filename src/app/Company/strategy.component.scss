@@ -12,7 +12,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-bottom: 20px;
     color: antiquewhite;
     font-style: italic;
     font-size: 26px;
@@ -50,4 +49,59 @@
       transition: 0.5s;
     }
   }
+}
+.company {
+  &__title {
+    color: black;
+    margin: -20px 0 ;
+  }
+  &__text {}
+  &__block {
+
+  }
+  &__box {
+    margin: 0 20px;
+    border: 1px solid white;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: antiquewhite;
+    padding-bottom: 20px;
+  }
+  &__photos {}
+}
+
+.info-company {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  &__title {}
+  &__left {
+    display: flex;
+    flex-direction: column;
+    max-width: 30%;
+    font-size: 22px;
+  }
+  &__center {
+    max-width: 30%;
+  }
+  &__slider {}
+  &__img {
+    width: 250px;
+  }
+  &__right {
+    max-width: 30%;
+    font-size: 18px;
+  }
+  &__button {
+    width: 150px;
+    height: 50px;
+    border-radius: 15px;
+    border: 1px solid gold;
+    cursor: pointer;
+  }
+
 }
