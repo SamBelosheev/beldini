@@ -87,7 +87,7 @@
   &__link {
     text-decoration: none;
     color: antiquewhite;
-    font-size: 36px;
+    font-size: 46px;
     font-style: italic;
     &:hover {
       text-decoration: underline;
@@ -117,6 +117,7 @@
 .phones-info__phone {
   text-decoration: none;
   color: antiquewhite;
+  font-size: 20px;
   &:hover {
     text-decoration: underline;
     color: gold;
@@ -126,9 +127,17 @@
 .emails-info__email {
   text-decoration: none;
   color: antiquewhite;
+  font-size: 20px;
   &:hover {
     text-decoration: underline;
     color: gold;
+    transition: 0.5s;
+  }
+}
+.logo-img {
+  width: 150px;
+  &:hover {
+    scale: 120%;
     transition: 0.5s;
   }
 }

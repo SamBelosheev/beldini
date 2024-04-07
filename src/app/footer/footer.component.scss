@@ -21,7 +21,6 @@
    display: grid;
    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
    justify-items: center;
-
    &__left {}
    &__map {
      display: none;
@@ -64,6 +63,7 @@
      text-decoration: none;
      list-style-type: none;
      color: antiquewhite;
+     font-size: 18px;
      &:hover {
        color: gold;
        transition: 0.5s;
@@ -74,3 +74,11 @@
   width: 35px;
   height: 35px;
 }
+.logo-img {
+  width: 150px;
+  &:hover {
+    scale: 120%;
+    transition: 0.5s;
+  }
+}
+
