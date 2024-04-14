@@ -17,14 +17,12 @@
     gap: 10px;
 }
 .prew__list {
+    color: antiquewhite;
     display: flex;
     align-items: center;
     margin-left: 25px;
     padding-left: 10px;
     cursor: pointer;
-    border: 1px solid white;
-    background-color: antiquewhite;
-    border-radius: 5px;
     height: 30px;
     width: 400px;
 
