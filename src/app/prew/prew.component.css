@@ -4,7 +4,8 @@
     padding-bottom: 25px;
 }
 .prew__container {
-
+    display: flex;
+    flex-direction: row;
 }
 .prew__left {
     display: flex;
@@ -25,5 +26,12 @@
     cursor: pointer;
     height: 30px;
     width: 400px;
-
+}
+.prew__text {
+    color: antiquewhite;
+    font-size: 24px;
+    margin-right: 40px;
+}
+[class*=active] {
+    color: orange;
 }
