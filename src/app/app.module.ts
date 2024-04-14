@@ -11,6 +11,8 @@ import { MindComponent } from './mind/mind.component';
 import { SurvivelComponent } from './Library/survivel.component';
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import { ProductsComponent } from './products/products.component';
+import { ClubComponent } from './club/club.component';
+import { PrewComponent } from './prew/prew.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { ProductsComponent } from './products/products.component';
     StrategyComponent,
     MindComponent,
     SurvivelComponent,
-    ProductsComponent
+    ProductsComponent,
+    ClubComponent,
+    PrewComponent
   ],
   imports: [
     BrowserModule,

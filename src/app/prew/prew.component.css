@@ -1,0 +1,31 @@
+.prew {
+    background-color: black;
+    padding-top: 200px;
+    padding-bottom: 25px;
+}
+.prew__container {
+
+}
+.prew__left {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.prew__boxes {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.prew__list {
+    display: flex;
+    align-items: center;
+    margin-left: 25px;
+    padding-left: 10px;
+    cursor: pointer;
+    border: 1px solid white;
+    background-color: antiquewhite;
+    border-radius: 5px;
+    height: 30px;
+    width: 400px;
+
+}

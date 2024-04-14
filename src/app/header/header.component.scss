@@ -9,18 +9,20 @@
     justify-content: space-around;
     align-items: center;
     background-color: black;
+    position: relative;
     @media (max-width: 720px) {
       flex-direction: column;
     }
   }
   &__navigation {
-
+    position: relative;
   }
   &__name {
     font-size: 40px;
-    font-weight: bold;
-    font-style: italic;
+    width: 250px;
     color: antiquewhite;
+    position: relative;
+    margin-left: -160px;
     @media (max-width: 720px) {
       margin: 0 -30px;
       padding: 0 -20px;
@@ -29,11 +31,13 @@
 }
 .logo-header{
   color: antiquewhite;
+  position: relative;
   &__title {
     font-size: 40px;
     font-weight: bold;
     font-style: italic;
     color: antiquewhite;
+    position: relative;
   }
 
   a{
@@ -41,10 +45,12 @@
     text-decoration: none;
     color: antiquewhite;
     cursor: pointer;
+    position: relative;
   }
 }
 
 .info-header {
+  position: relative;
   &__phones {
     display: flex;
     align-items: center;
@@ -52,6 +58,7 @@
     padding: 10px 0;
     color: antiquewhite;
     text-decoration: none;
+    position: relative;
   }
   &__emails {
     display: flex;
@@ -59,15 +66,16 @@
     gap: 20px;
     padding: 10px 0;
     color: antiquewhite;
+    position: relative;
   }
   &__socials {
-
+    position: relative;
   }
 }
 
 .navigation-header {
-  background-color: black;
 
+  position: relative;
   *li{
     list-style-type: none;
   }
@@ -76,19 +84,21 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    position: relative;
     @media (max-width: 420px) {
       flex-direction: column;
       gap: 15px;
     }
   }
   &__item {
-
+    position: relative;
   }
   &__link {
     text-decoration: none;
     color: antiquewhite;
     font-size: 46px;
     font-style: italic;
+    position: relative;
     &:hover {
       text-decoration: underline;
       color: gold;
@@ -105,6 +115,7 @@
 .emails-info__img {
   width: 40px;
   height: 40px;
+  position: relative;
 }
 
 .socials-info {
@@ -113,11 +124,13 @@
   gap: 20px;
   padding: 20px 0;
   justify-content: center;
+  position: relative;
 }
 .phones-info__phone {
   text-decoration: none;
   color: antiquewhite;
   font-size: 20px;
+  position: relative;
   &:hover {
     text-decoration: underline;
     color: gold;
@@ -128,6 +141,7 @@
   text-decoration: none;
   color: antiquewhite;
   font-size: 20px;
+  position: relative;
   &:hover {
     text-decoration: underline;
     color: gold;
@@ -136,8 +150,18 @@
 }
 .logo-img {
   width: 250px;
+  position: relative;
   &:hover {
     scale: 120%;
     transition: 0.5s;
   }
+}
+.main-back {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  margin-top: -50px;
+  margin-bottom: -250px;
 }

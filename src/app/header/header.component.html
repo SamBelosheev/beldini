@@ -3,7 +3,7 @@
     <div class="header__logo logo-header">
       <h1><a class="logo-header__title" [routerLink]="['/']"><img class="logo-img" src="{{ 'assets/logo/logo.jpg' }}" alt="mail"></a></h1>
     </div>
-    <div class="header__name"><h1>Beldini</h1></div>
+    <div class="header__name"><img src="{{ 'assets/logo/main.jpg' }}" alt="mail"></div>
     <div class="header__info info-header">
       <div class="info-header__phones phones-info">
         <img class="emails-info__img" src="{{ 'assets/icons/phone.ico' }}" alt="mail">
@@ -29,11 +29,13 @@
       </div>
     </div>
   </div>
+  <img class="main-back" src="{{ 'assets/background/main.jpg' }}" >
   <div class="header__navigation navigation-header">
     <ul class="navigation-header__list">
-      <li  class="navigation-header__item"><a routerLinkActive="active" class="navigation-header__link" [routerLink]="['/mind']">Company</a></li>
+      <li  class="navigation-header__item"><a routerLinkActive="active" class="navigation-header__link" [routerLink]="['/prew']">Company</a></li>
       <li  class="navigation-header__item"><a routerLinkActive="active" class="navigation-header__link" [routerLink]="['/Company']">Gallery</a></li>
       <li  class="navigation-header__item"><a routerLinkActive="active" class="navigation-header__link" [routerLink]="['/Library']">Library</a></li>
+      <li  class="navigation-header__item"><a routerLinkActive="active" class="navigation-header__link" [routerLink]="['/club']">Club</a></li>
     </ul>
   </div>
 </div>

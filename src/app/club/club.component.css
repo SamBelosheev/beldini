@@ -1,0 +1,30 @@
+.club {
+    padding: 250px 0;
+    background-color: black;
+
+
+}
+.club__box {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    gap: 30px;
+    align-items: center;
+}
+.club__title {
+    color: antiquewhite;
+    font-size: 40px;
+    font-style: italic;
+}
+.club__login {
+
+}
+.club__pass {
+
+}
+.club__container {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
