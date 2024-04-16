@@ -1,8 +1,5 @@
 import { Component } from '@angular/core';
 
-const LIST: string[] = [
-  'первый пункт'
-];
 @Component({
   selector: 'app-prew',
   templateUrl: './prew.component.html',
@@ -57,11 +54,6 @@ export class PrewComponent {
   more46 = false
   more47 = false
 
-  public list: string[] = LIST;
-  public activeItem: string;
 
-  public onSelectItem(item: string): void {
-    this.activeItem = item;
-  }
 
 }

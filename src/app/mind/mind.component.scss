@@ -38,7 +38,7 @@
     justify-content: center;
     font-size: 32px;
     font-style: italic;
-    color: antiquewhite;
+    color: white;
     @media (max-width: 720px) {
       font-size: 16px;
     }
@@ -47,7 +47,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    color: antiquewhite;
+    color: white;
   }
   &__right {
     display: flex;
@@ -64,7 +64,7 @@
   &__slider {
     display: flex;
     align-items: center;
-    color: antiquewhite;
+    color: white;
   }
   &__down {
     display: flex;
@@ -74,7 +74,7 @@
     font-size: 16px;
     font-style: italic;
     padding: 50px 100px;
-    color: antiquewhite;
+    color: white;
     background-color: black;
     @media (max-width: 720px) {
       padding: 10px 20px;
