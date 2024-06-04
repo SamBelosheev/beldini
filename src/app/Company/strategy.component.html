@@ -1,60 +1,16 @@
-
 <div class="company__container company">
   <div class="company__block">
     <div class="company__box">
       <div class="company__title">
-        <h1>Камины</h1>
+        <span class="company__item">{{show ? '⯭' : '⯯'}}</span>
+        <h1 (click)="show = !show">ХУДОЖЕСТВЕННЫЙ МРАМОР</h1>
+        <span class="company__item">{{show ? '⯭' : '⯯'}}</span>
       </div>
-      <div class="company__title">
-        <h2>Дровяные порталы</h2>
-      </div>
-      <div class="company__info info-company">
-        <div class="info-company__left">
-          <h3>Описание продукции Beldini:</h3>
-          <p>Наименование изделия: мраморный художественый портал дровяного камина</p>
-          <p>Каминые дровяные порталы из белого мрамора - это декоративный элемент, окружающий каминый проём.
-           Портал служит обрамлением камина, подчёркивающий его внешнюю привлекательность и элегантность</p>
-        </div>
-        <div class="info-company__center">
-          <div class="info-company__slider">
-            <img class="info-company__img" src="{{ 'assets/main/1.jpg' }}" >
-          </div>
-        </div>
-        <div class="info-company__right">
-          <h3>Описание справочной модели:</h3>
-          <p>Код товарной группы:</p>
-          <p>Артикул</p>
-          <p>Модель:</p>
-          <p>Минерал:</p>
-          <p>Форма:</p>
-          <p>Фактура</p>
-          <p>Технология изготовления:</p>
-        </div>
-      </div>
-      <button class="info-company__button" (click)="show = !show">Показать все</button>
-      <div class="company__photos">
-        <div *ngIf="show" class="company__card">
-
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="company__container company">
-  <div class="company__block">
-    <div class="company__box">
-      <div class="company__title">
-        <h1>Фонтаны</h1>
-      </div>
-      <div class="company__title">
-        <h2>Фонтан водяной</h2>
-      </div>
-      <div class="company__info info-company">
+      <div *ngIf="show" class="company__info info-company">
           <div class="info-company__left">
-            <h3>Описание продукции Beldini:</h3>
-            <p>Наименование изделия: Фонтан уличный</p>
-            <p>Фонтан это элемент показывающий достаток и чувство стиля.
-              Фонтан служит украшением сада, подчёркивающий его внешнюю привлекательность и элегантность</p>
+            <p>Описание продукции Beldini:</p>
+            <p>Наименование изделия: </p>
+            <p>Краткое описание главного товара</p>
           </div>
         <div class="info-company__center">
           <div class="info-company__slider">
@@ -72,10 +28,178 @@
           <p>Технология изготовления:</p>
         </div>
       </div>
-      <button class="info-company__button" (click)="show = !show">Показать все</button>
-      <div class="company__photos">
-        <div *ngIf="show" class="company__card">
-
+    </div>
+    <div class="company__box">
+      <div class="company__title">
+        <span class="company__item">{{show1 ? '⯭' : '⯯'}}</span>
+        <h1 (click)="show1 = !show1">АРХИТЕКТУРНЫЙ МРАМОР</h1>
+        <span class="company__item">{{show1 ? '⯭' : '⯯'}}</span>
+      </div>
+      <div *ngIf="show1" class="company__info info-company">
+        <div class="info-company__left">
+          <p>Описание продукции Beldini:</p>
+          <p>Наименование изделия: </p>
+          <p>Краткое описание главного товара</p>
+        </div>
+        <div class="info-company__center">
+          <div class="info-company__slider">
+            <img class="info-company__img" src="{{ 'assets/main/1.jpg' }}" >
+          </div>
+        </div>
+        <div class="info-company__right">
+          <h3>Описание справочной модели:</h3>
+          <p>Код товарной группы:</p>
+          <p>Артикул</p>
+          <p>Модель:</p>
+          <p>Минерал:</p>
+          <p>Форма:</p>
+          <p>Фактура</p>
+          <p>Технология изготовления:</p>
+        </div>
+      </div>
+    </div>
+    <div class="company__box">
+      <div class="company__title">
+        <span class="company__item">{{show2 ? '⯭' : '⯯'}}</span>
+        <h1 (click)="show2 = !show2">СТРОИТЕЛЬНЫЙ МРАМОР</h1>
+        <span class="company__item">{{show2 ? '⯭' : '⯯'}}</span>
+      </div>
+      <div *ngIf="show2" class="company__info info-company">
+        <div class="info-company__left">
+          <p>Описание продукции Beldini:</p>
+          <p>Наименование изделия: </p>
+          <p>Краткое описание главного товара</p>
+        </div>
+        <div class="info-company__center">
+          <div class="info-company__slider">
+            <img class="info-company__img" src="{{ 'assets/main/2.jpg' }}" >
+          </div>
+        </div>
+        <div class="info-company__right">
+          <h3>Описание справочной модели:</h3>
+          <p>Код товарной группы:</p>
+          <p>Артикул</p>
+          <p>Модель:</p>
+          <p>Минерал:</p>
+          <p>Форма:</p>
+          <p>Фактура</p>
+          <p>Технология изготовления:</p>
+        </div>
+      </div>
+    </div>
+    <div class="company__box">
+      <div class="company__title">
+        <span class="company__item">{{show3 ? '⯭' : '⯯'}}</span>
+        <h1 (click)="show3 = !show3">РИТУАЛЬНЫЙ МРАМОР</h1>
+        <span class="company__item">{{show3 ? '⯭' : '⯯'}}</span>
+      </div>
+      <div *ngIf="show3" class="company__info info-company">
+        <div class="info-company__left">
+          <p>Описание продукции Beldini:</p>
+          <p>Наименование изделия: </p>
+          <p>Краткое описание главного товара</p>
+        </div>
+        <div class="info-company__center">
+          <div class="info-company__slider">
+            <img class="info-company__img" src="{{ 'assets/main/3.jpg' }}" >
+          </div>
+        </div>
+        <div class="info-company__right">
+          <h3>Описание справочной модели:</h3>
+          <p>Код товарной группы:</p>
+          <p>Артикул</p>
+          <p>Модель:</p>
+          <p>Минерал:</p>
+          <p>Форма:</p>
+          <p>Фактура</p>
+          <p>Технология изготовления:</p>
+        </div>
+      </div>
+    </div>
+    <div class="company__box">
+      <div class="company__title">
+        <span class="company__item">{{show4 ? '⯭' : '⯯'}}</span>
+        <h1 (click)="show4 = !show4">РЕЛИГИОЗНЫЙ МРАМОР</h1>
+        <span class="company__item">{{show4 ? '⯭' : '⯯'}}</span>
+      </div>
+      <div *ngIf="show4" class="company__info info-company">
+        <div class="info-company__left">
+          <p>Описание продукции Beldini:</p>
+          <p>Наименование изделия: </p>
+          <p>Краткое описание главного товара</p>
+        </div>
+        <div class="info-company__center">
+          <div class="info-company__slider">
+            <img class="info-company__img" src="{{ 'assets/main/1.jpg' }}" >
+          </div>
+        </div>
+        <div class="info-company__right">
+          <h3>Описание справочной модели:</h3>
+          <p>Код товарной группы:</p>
+          <p>Артикул</p>
+          <p>Модель:</p>
+          <p>Минерал:</p>
+          <p>Форма:</p>
+          <p>Фактура</p>
+          <p>Технология изготовления:</p>
+        </div>
+      </div>
+    </div>
+    <div class="company__box">
+      <div class="company__title">
+        <span class="company__item">{{show5 ? '⯭' : '⯯'}}</span>
+        <h1 (click)="show5 = !show5">ПРОИЗВОДСТВЕННЫЙ МРАМОР</h1>
+        <span class="company__item">{{show5 ? '⯭' : '⯯'}}</span>
+      </div>
+      <div *ngIf="show5" class="company__info info-company">
+        <div class="info-company__left">
+          <p>Описание продукции Beldini:</p>
+          <p>Наименование изделия: </p>
+          <p>Краткое описание главного товара</p>
+        </div>
+        <div class="info-company__center">
+          <div class="info-company__slider">
+            <img class="info-company__img" src="{{ 'assets/main/2.jpg' }}" >
+          </div>
+        </div>
+        <div class="info-company__right">
+          <h3>Описание справочной модели:</h3>
+          <p>Код товарной группы:</p>
+          <p>Артикул</p>
+          <p>Модель:</p>
+          <p>Минерал:</p>
+          <p>Форма:</p>
+          <p>Фактура</p>
+          <p>Технология изготовления:</p>
+        </div>
+      </div>
+    </div>
+    <div class="company__box">
+      <div class="company__title">
+        <span class="company__item">{{show6 ? '⯭' : '⯯'}}</span>
+        <h1 (click)="show6 = !show6">ПРОМЫШЛЕННЫЙ МРАМОР</h1>
+        <span class="company__item">{{show6 ? '⯭' : '⯯'}}</span>
+      </div>
+      <div *ngIf="show6" class="company__info info-company">
+        <div class="info-company__left">
+          <p>Описание продукции Beldini:</p>
+          <p>Наименование изделия: </p>
+          <p>Краткое описание главного товара</p>
+        </div>
+        <div class="info-company__center">
+          <div class="info-company__slider">
+            <img class="info-company__img" src="{{ 'assets/main/3.jpg' }}" >
+          </div>
+        </div>
+        <div class="info-company__right">
+          <h3>Описание справочной модели:</h3>
+          <p>Код товарной группы:</p>
+          <p>Артикул</p>
+          <p>Модель:</p>
+          <p>Минерал:</p>
+          <p>Форма:</p>
+          <p>Фактура</p>
+          <p>Технология изготовления:</p>
         </div>
       </div>
     </div>
