@@ -72,8 +72,9 @@
 }
 
 .info-company {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: repeat(5, 250px);
+  gap: 20px;
   justify-content: space-between;
   align-items: center;
   width: 90%;
@@ -101,6 +102,25 @@
     border: 1px solid gold;
     cursor: pointer;
   }
+  &__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 250px;
+    box-shadow: 0 0.25rem 1.25rem rgba(232, 170, 49, 0.3);
+
+  }
+  &__name {}
+  &__photo {
+    padding: 0 10px;
+    max-width: 230px;
+    &:hover {
+      transform: scale(1.5);
+      transition: 0.5s;
+    }
+  }
+  &__size {}
 
 }
 
