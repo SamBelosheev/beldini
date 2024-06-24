@@ -2,6 +2,9 @@
 .company__container {
   background-color: black;
   margin-top: 150px;
+  @media (max-width: 720px) {
+    margin-top: 0;
+  }
 }
 .company {
   background-color: black;
@@ -53,6 +56,9 @@
     font-size: 14px;
     width: 90%;
     cursor: pointer;
+    @media (max-width: 720px) {
+      font-size: 8px;
+    }
   }
   &__text {}
   &__block {
@@ -78,6 +84,10 @@
   justify-content: space-between;
   align-items: center;
   width: 90%;
+  @media (max-width: 720px) {
+    grid-template-columns: repeat(2, 180px);
+    gap: 5px;
+  }
   &__title {}
   &__left {
     display: flex;
@@ -109,9 +119,15 @@
     align-items: center;
     max-width: 250px;
     box-shadow: 0 0.25rem 1.25rem rgba(232, 170, 49, 0.3);
-
+    @media (max-width: 720px) {
+      max-width: 150px;
+    }
   }
-  &__name {}
+  &__name {
+    @media (max-width: 720px) {
+      font-size: 8px;
+    }
+  }
   &__photo {
     padding: 0 10px;
     max-width: 230px;

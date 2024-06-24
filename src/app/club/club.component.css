@@ -15,6 +15,9 @@
     color: white;
     font-size: 40px;
     font-style: italic;
+    @media (max-width: 720px) {
+        font-size: 20px;
+    }
 }
 .club__login {
 

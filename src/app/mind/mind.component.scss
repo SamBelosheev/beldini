@@ -1,5 +1,5 @@
 .mainPage {
-
+  background-color: black;
   position: relative;
 }
 .page {
@@ -26,10 +26,11 @@
     max-width: 50%;
     @media (max-width: 720px) {
       max-width: 100%;
-      padding: 0 15px;
       display: flex;
       align-items: center;
       justify-content: center;
+      margin:0 25px;
+      flex-wrap: wrap;
     }
   }
   &__title {
@@ -39,8 +40,10 @@
     font-size: 32px;
     font-style: italic;
     color: white;
+    background-color: black;
     @media (max-width: 720px) {
-      font-size: 16px;
+      font-size: 14px;
+      padding-bottom: 5px;
     }
   }
   &__text {
@@ -48,6 +51,14 @@
     flex-direction: column;
     justify-content: center;
     color: white;
+    @media (max-width: 720px) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      font-size: 12px;
+      margin-left:10px;
+    }
   }
   &__right {
     display: flex;
@@ -55,7 +66,7 @@
     justify-content: center;
     max-width: 50%;
     @media (max-width: 720px) {
-      max-width: 100%;
+      max-width: 90%;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -78,6 +89,7 @@
     background-color: black;
     @media (max-width: 720px) {
       padding: 10px 20px;
+      font-size: 12px;
     }
   }
 }
@@ -88,7 +100,7 @@
   margin: 50px auto;
   box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.75);
   @media (max-width: 720px) {
-    width: 380px;
+    width: 240px;
   }
 }
 
@@ -142,8 +154,8 @@
   height: 340px;
   float: left;
   @media (max-width: 720px) {
-    width: 380px;
-    height: 240px;
+    width: 240px;
+    height: 160px;
   }
 }
 
@@ -154,21 +166,29 @@
 #btn2:checked~.slider-inner .slides {
   transform: translate(-580px);
   @media (max-width: 720px) {
-    transform: translate(-380px);
+    transform: translate(-240px);
   }
 }
 
 #btn3:checked~.slider-inner .slides {
   transform: translate(-1160px);
   @media (max-width: 720px) {
-    transform: translate(-760px);
+    transform: translate(-480px);
   }
 }
 
 
 
 .down-page {
-
+  background-color: black;
+  @media (max-width: 720px) {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:0 15px;
+    flex-wrap: wrap;
+  }
   &__box {
     display: flex;
     flex-direction: row;
@@ -193,5 +213,8 @@
   }
   &__img {
     width: 300px;
+    @media (max-width: 720px) {
+      width: 150px;
+    }
   }
 }
