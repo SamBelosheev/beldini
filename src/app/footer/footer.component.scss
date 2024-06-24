@@ -22,6 +22,12 @@
    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
    justify-items: center;
    align-items: center;
+   @media (max-width: 520px) {
+     display: flex;
+     flex-direction: column;
+     justify-items: center;
+     align-items: center;
+   }
    &__left {}
    &__map {
      display: none;
