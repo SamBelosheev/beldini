@@ -2,6 +2,9 @@
     background-color: black;
     padding-top: 200px;
     padding-bottom: 25px;
+    @media (max-width: 720px) {
+        padding-top: 25px;
+    }
 }
 .prew__container {
     display: flex;
@@ -16,6 +19,9 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
+    @media (max-width: 720px) {
+        gap: 1px;
+    }
 }
 .prew__list {
     color: white;
@@ -26,11 +32,20 @@
     cursor: pointer;
     height: 30px;
     width: 400px;
+    @media (max-width: 720px) {
+        font-size: 12px;
+        margin-left: 10px;
+        padding-left: 5px;
+        width: 200px;
+    }
 }
 .prew__text {
     color: white;
     font-size: 24px;
     margin-right: 40px;
+    @media (max-width: 720px) {
+        font-size: 10px;
+    }
 }
 [class*=active] {
     color: orange;
