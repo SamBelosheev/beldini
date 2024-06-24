@@ -179,4 +179,7 @@
   height: 100%;
   margin-top: -50px;
   margin-bottom: -250px;
+  @media (max-width: 720px) {
+    background-color: black;
+  }
 }
