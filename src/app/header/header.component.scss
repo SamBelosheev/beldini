@@ -94,6 +94,7 @@
     justify-content: space-around;
     align-items: center;
     position: relative;
+    background-color: black;
     @media (max-width: 720px) {
       flex-direction: column;
       gap: 15px;

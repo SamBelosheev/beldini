@@ -18,6 +18,26 @@
     flex-direction: row;
     justify-content: space-around;
   }
+  &__lists {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: antiquewhite;
+    font-size: 14px;
+    width: 95%;
+    cursor: pointer;
+  }
+  &__under {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: antiquewhite;
+    font-size: 14px;
+    width: 95%;
+    cursor: pointer;
+  }
 }
 .left-company {
   &__list {
@@ -73,6 +93,7 @@
     background-color: black;
     padding-bottom: 20px;
     color: white;
+    border-bottom: 0.5px solid antiquewhite;
   }
   &__photos {}
 }

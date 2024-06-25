@@ -2,122 +2,786 @@
   <div class="company__block">
     <div class="company__box">
       <div class="company__title">
-        <span class="company__item">{{show ? '⯭' : '⯯'}}</span>
-        <h1 (click)="show = !show">ХУДОЖЕСТВЕННЫЙ МРАМОР</h1>
-        <span class="company__item">{{show ? '⯭' : '⯯'}}</span>
+        <span class="company__item">{{under ? '⯭' : '⯯'}}</span>
+        <h1 (click)="under = !under">ХУДОЖЕСТВЕННЫЙ МРАМОР</h1>
+        <span class="company__item">{{under ? '⯭' : '⯯'}}</span>
       </div>
-      <div *ngIf="show" class="company__info info-company">
-        <div class="info-company__card">
-            <div class="info-company__name">
-              <p>101. Ротонды</p>
+        <div  *ngIf="under" class="company__under">
+            <div class="company__title">
+                <span class="company__item">{{show ? '⯭' : '⯯'}}</span>
+                <h1 (click)="show = !show">ХУДОЖЕСТВЕННЫЕ КОМПОЗИТНЫЕ</h1>
+                <span class="company__item">{{show ? '⯭' : '⯯'}}</span>
             </div>
-            <div class="info-company__photo">
-              <img src="{{ 'assets/photo/art100/101.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
+            <div *ngIf="show"  class="company__lists">
+                <span class="company__item">{{more ? '⯭' : '⯯'}}</span>
+                <h1 (click)="more = !more">Архитектурные сооружения</h1>
+                <span class="company__item">{{more ? '⯭' : '⯯'}}</span>
             </div>
-            <div class="info-company__size">
-              <p>23</p>
+            <div *ngIf="more" class="company__info info-company">
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>101. Ротонды</p>
+                    </div>
+                    <div class="info-company__photo">
+                        <img src="{{ 'assets/photo/art100/101.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
+                    </div>
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>102. Беседки</p>
+                    </div>
+                    <div class="info-company__photo">
+                        <img src="{{ 'assets/photo/art100/102.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
+                    </div>
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>103. Перголы</p>
+                    </div>
+                    <div class="info-company__photo">
+                        <img src="{{ 'assets/photo/art100/103.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
+                    </div>
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>104. Коллонады</p>
+                    </div>
+                    <div class="info-company__photo">
+                        <img src="{{ 'assets/photo/art100/104.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
+                    </div>
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>105. Аркады</p>
+                    </div>
+                    <div class="info-company__photo">
+                        <img src="{{ 'assets/photo/art100/105.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
+                    </div>
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
             </div>
-          </div>
-        <div class="info-company__card">
-          <div class="info-company__name">
-            <p>102. Беседки</p>
-          </div>
-          <div class="info-company__photo">
-            <img src="{{ 'assets/photo/art100/102.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
-          </div>
-          <div class="info-company__size">
-            <p>23</p>
-          </div>
+            <div *ngIf="show"  class="company__lists">
+                <span class="company__item">{{more1 ? '⯭' : '⯯'}}</span>
+                <h1 (click)="more1 = !more1">Водные композиции</h1>
+                <span class="company__item">{{more1 ? '⯭' : '⯯'}}</span>
+            </div>
+            <div *ngIf="more1" class="company__info info-company">
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>106. Фонтаны и водопады с бассейнами</p>
+                    </div>
+                    <div class="info-company__photo">
+                        <img src="{{ 'assets/photo/art100/101.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
+                    </div>
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>107. Фонтаны и водопады с шарами</p>
+                    </div>
+                    <div class="info-company__photo">
+                        <img src="{{ 'assets/photo/art100/102.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
+                    </div>
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>108. Фонтаны и водопады</p>
+                    </div>
+                    <div class="info-company__photo">
+                        <img src="{{ 'assets/photo/art100/103.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
+                    </div>
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>109. Бассейны и пруды</p>
+                    </div>
+                    <div class="info-company__photo">
+                        <img src="{{ 'assets/photo/art100/104.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
+                    </div>
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>110. Питьевые фонтаны</p>
+                    </div>
+                    <div class="info-company__photo">
+                        <img src="{{ 'assets/photo/art100/105.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
+                    </div>
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>111. Умывальники</p>
+                    </div>
+                    <div class="info-company__photo">
+                        <img src="{{ 'assets/photo/art100/106.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
+                    </div>
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+            </div>
+            <div *ngIf="show"  class="company__lists">
+                <span class="company__item">{{more2 ? '⯭' : '⯯'}}</span>
+                <h1 (click)="more2 = !more2">Садово-парковые композиции</h1>
+                <span class="company__item">{{more2 ? '⯭' : '⯯'}}</span>
+            </div>
+            <div *ngIf="more2" class="company__info info-company">
+            <div class="info-company__card">
+                <div class="info-company__name">
+                    <p>112. Композиции сс шарами</p>
+                </div>
+                <div class="info-company__photo">
+                    <img src="{{ 'assets/photo/art100/101.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
+                </div>
+                <div class="info-company__size">
+                    <p>23</p>
+                </div>
+            </div>
+            <div class="info-company__card">
+                <div class="info-company__name">
+                    <p>113. Увлекательные композиции</p>
+                </div>
+                <div class="info-company__photo">
+                    <img src="{{ 'assets/photo/art100/102.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
+                </div>
+                <div class="info-company__size">
+                    <p>23</p>
+                </div>
+            </div>
+            <div class="info-company__card">
+                <div class="info-company__name">
+                    <p>114. Мебель</p>
+                </div>
+                <div class="info-company__photo">
+                    <img src="{{ 'assets/photo/art100/103.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
+                </div>
+                <div class="info-company__size">
+                    <p>23</p>
+                </div>
+            </div>
+            <div class="info-company__card">
+                <div class="info-company__name">
+                    <p>115. Клумбы</p>
+                </div>
+                <div class="info-company__photo">
+                    <img src="{{ 'assets/photo/art100/104.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
+                </div>
+                <div class="info-company__size">
+                    <p>23</p>
+                </div>
+            </div>
         </div>
-        <div class="info-company__card">
-          <div class="info-company__name">
-            <p>103. Перголы</p>
-          </div>
-          <div class="info-company__photo">
-            <img src="{{ 'assets/photo/art100/103.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
-          </div>
-          <div class="info-company__size">
-            <p>23</p>
-          </div>
         </div>
-        <div class="info-company__card">
-          <div class="info-company__name">
-            <p>104. Коллонады</p>
-          </div>
-          <div class="info-company__photo">
-            <img src="{{ 'assets/photo/art100/104.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
-          </div>
-          <div class="info-company__size">
-            <p>23</p>
-          </div>
+        <div  *ngIf="under" class="company__under">
+            <div class="company__title">
+                <span class="company__item">{{show1 ? '⯭' : '⯯'}}</span>
+                <h1 (click)="show1 = !show1">ХУДОЖЕСТВЕННЫЕ ИЗДЕЛИЯ</h1>
+                <span class="company__item">{{show1 ? '⯭' : '⯯'}}</span>
+            </div>
+            <div *ngIf="show1"  class="company__lists">
+                <span class="company__item">{{more3 ? '⯭' : '⯯'}}</span>
+                <h1 (click)="more3 = !more3">Скульптуры</h1>
+                <span class="company__item">{{more3 ? '⯭' : '⯯'}}</span>
+            </div>
+            <div *ngIf="more3" class="company__info info-company">
+            <div class="info-company__card">
+                <div class="info-company__name">
+                    <p>116. Известные личности</p>
+                </div>
+                <div class="info-company__photo">
+                    <img src="{{ 'assets/photo/art100/101.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
+                </div>
+                <div class="info-company__size">
+                    <p>23</p>
+                </div>
+            </div>
+            <div class="info-company__card">
+                <div class="info-company__name">
+                    <p>117. Известные персонажи</p>
+                </div>
+                <div class="info-company__photo">
+                    <img src="{{ 'assets/photo/art100/102.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
+                </div>
+                <div class="info-company__size">
+                    <p>23</p>
+                </div>
+            </div>
+            <div class="info-company__card">
+                <div class="info-company__name">
+                    <p>118. Скульптуры людей</p>
+                </div>
+                <div class="info-company__photo">
+                    <img src="{{ 'assets/photo/art100/103.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
+                </div>
+                <div class="info-company__size">
+                    <p>23</p>
+                </div>
+            </div>
+            <div class="info-company__card">
+                <div class="info-company__name">
+                    <p>119. Анималистика</p>
+                </div>
+                <div class="info-company__photo">
+                    <img src="{{ 'assets/photo/art100/104.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
+                </div>
+                <div class="info-company__size">
+                    <p>23</p>
+                </div>
+            </div>
+            <div class="info-company__card">
+                <div class="info-company__name">
+                    <p>120. Арт скульптуры</p>
+                </div>
+                <div class="info-company__photo">
+                    <img src="{{ 'assets/photo/art100/105.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
+                </div>
+                <div class="info-company__size">
+                    <p>23</p>
+                </div>
+            </div>
+            <div class="info-company__card">
+                <div class="info-company__name">
+                    <p>121. Мультипликационые персонажи</p>
+                </div>
+                <div class="info-company__photo">
+                    <img src="{{ 'assets/photo/art100/106.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
+                </div>
+                <div class="info-company__size">
+                    <p>23</p>
+                </div>
+            </div>
         </div>
-        <div class="info-company__card">
-          <div class="info-company__name">
-            <p>105. Аркады</p>
-          </div>
-          <div class="info-company__photo">
-            <img src="{{ 'assets/photo/art100/105.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
-          </div>
-          <div class="info-company__size">
-            <p>23</p>
-          </div>
+            <div *ngIf="show1"  class="company__lists">
+                <span class="company__item">{{more4 ? '⯭' : '⯯'}}</span>
+                <h1 (click)="more4 = !more4">Декоративные скульптуры</h1>
+                <span class="company__item">{{more4 ? '⯭' : '⯯'}}</span>
+            </div>
+            <div *ngIf="more4" class="company__info info-company">
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>122. Пьедесталы</p>
+                    </div>
+                    <div class="info-company__photo">
+                        <img src="{{ 'assets/photo/art100/101.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
+                    </div>
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>123. Ангелы</p>
+                    </div>
+                    <div class="info-company__photo">
+                        <img src="{{ 'assets/photo/art100/102.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
+                    </div>
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>124. Бюсты</p>
+                    </div>
+                    <div class="info-company__photo">
+                        <img src="{{ 'assets/photo/art100/103.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
+                    </div>
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>125. Вазы</p>
+                    </div>
+                    <div class="info-company__photo">
+                        <img src="{{ 'assets/photo/art100/104.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
+                    </div>
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>126. Чаши</p>
+                    </div>
+                    <div class="info-company__photo">
+                        <img src="{{ 'assets/photo/art100/105.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
+                    </div>
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>127. Кувшины</p>
+                    </div>
+                    <div class="info-company__photo">
+                        <img src="{{ 'assets/photo/art100/106.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
+                    </div>
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>128. Урны</p>
+                    </div>
+                    <div class="info-company__photo">
+                        <img src="{{ 'assets/photo/art100/106.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
+                    </div>
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+            </div>
+            <div *ngIf="show1"  class="company__lists">
+                <span class="company__item">{{more5 ? '⯭' : '⯯'}}</span>
+                <h1 (click)="more5 = !more5">Камины</h1>
+                <span class="company__item">{{more5 ? '⯭' : '⯯'}}</span>
+            </div>
+            <div *ngIf="more5" class="company__info info-company">
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>129. Дровяные порталы</p>
+                    </div>
+                    <div class="info-company__photo">
+                        <img src="{{ 'assets/photo/art100/101.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
+                    </div>
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>130. Электрические порталы</p>
+                    </div>
+                    <div class="info-company__photo">
+                        <img src="{{ 'assets/photo/art100/102.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
+                    </div>
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+            </div>
+            <div *ngIf="show1"  class="company__lists">
+                <span class="company__item">{{more6 ? '⯭' : '⯯'}}</span>
+                <h1 (click)="more6 = !more6">Мебель</h1>
+                <span class="company__item">{{more6 ? '⯭' : '⯯'}}</span>
+            </div>
+            <div *ngIf="more6" class="company__info info-company">
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>131. Стелажи, полки, эдикулы</p>
+                    </div>
+                    <div class="info-company__photo">
+                        <img src="{{ 'assets/photo/art100/101.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
+                    </div>
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>132. Диваны</p>
+                    </div>
+                    <div class="info-company__photo">
+                        <img src="{{ 'assets/photo/art100/102.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
+                    </div>
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>133. Кресла</p>
+                    </div>
+                    <div class="info-company__photo">
+                        <img src="{{ 'assets/photo/art100/103.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
+                    </div>
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>134. Скамьи</p>
+                    </div>
+                    <div class="info-company__photo">
+                        <img src="{{ 'assets/photo/art100/104.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
+                    </div>
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>135. Трапезные столы</p>
+                    </div>
+                    <div class="info-company__photo">
+                        <img src="{{ 'assets/photo/art100/105.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
+                    </div>
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>136. Письменые столы</p>
+                    </div>
+                    <div class="info-company__photo">
+                        <img src="{{ 'assets/photo/art100/106.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
+                    </div>
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>137. Барные столы</p>
+                    </div>
+                    <div class="info-company__photo">
+                        <img src="{{ 'assets/photo/art100/106.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
+                    </div>
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>138. Журнальные столики</p>
+                    </div>
+                    <div class="info-company__photo">
+                        <img src="{{ 'assets/photo/art100/106.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
+                    </div>
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+            </div>
+            <div *ngIf="show1"  class="company__lists">
+                <span class="company__item">{{more7 ? '⯭' : '⯯'}}</span>
+                <h1 (click)="more7 = !more7">Одные изделия</h1>
+                <span class="company__item">{{more7 ? '⯭' : '⯯'}}</span>
+            </div>
+            <div *ngIf="more7" class="company__info info-company">
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>139. Ванные чаши</p>
+                    </div>
+                    <div class="info-company__photo">
+                        <img src="{{ 'assets/photo/art100/101.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
+                    </div>
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>140. Умывальники</p>
+                    </div>
+                    <div class="info-company__photo">
+                        <img src="{{ 'assets/photo/art100/102.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
+                    </div>
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>141. Курны</p>
+                    </div>
+                    <div class="info-company__photo">
+                        <img src="{{ 'assets/photo/art100/103.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
+                    </div>
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+            </div>
+            <div *ngIf="show1"  class="company__lists">
+                <span class="company__item">{{more8 ? '⯭' : '⯯'}}</span>
+                <h1 (click)="more8 = !more8">Панно и картины</h1>
+                <span class="company__item">{{more8 ? '⯭' : '⯯'}}</span>
+            </div>
+            <div *ngIf="more8" class="company__info info-company">
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>142. Горельефы</p>
+                    </div>
+                    <div class="info-company__photo">
+                        <img src="{{ 'assets/photo/art100/101.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
+                    </div>
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>143. Барельефы</p>
+                    </div>
+                    <div class="info-company__photo">
+                        <img src="{{ 'assets/photo/art100/102.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
+                    </div>
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>144. Контррельефы</p>
+                    </div>
+                    <div class="info-company__photo">
+                        <img src="{{ 'assets/photo/art100/103.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
+                    </div>
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>145. Мозаичные панно</p>
+                    </div>
+                    <div class="info-company__photo">
+                        <img src="{{ 'assets/photo/art100/104.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
+                    </div>
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+            </div>
+            <div *ngIf="show1"  class="company__lists">
+                <span class="company__item">{{more9 ? '⯭' : '⯯'}}</span>
+                <h1 (click)="more9 = !more9">Архитектурная миниатюра</h1>
+                <span class="company__item">{{more9 ? '⯭' : '⯯'}}</span>
+            </div>
+            <div *ngIf="more9" class="company__info info-company">
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>146. Архитектурные скульптуры</p>
+                    </div>
+                    <div class="info-company__photo">
+                        <img src="{{ 'assets/photo/art100/101.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
+                    </div>
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>147. Архитектурные статуэтки</p>
+                    </div>
+                    <div class="info-company__photo">
+                        <img src="{{ 'assets/photo/art100/102.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
+                    </div>
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+            </div>
+            <div *ngIf="show1"  class="company__lists">
+                <span class="company__item">{{more10 ? '⯭' : '⯯'}}</span>
+                <h1 (click)="more10 = !more10">Аксессуары и украшения</h1>
+                <span class="company__item">{{more10 ? '⯭' : '⯯'}}</span>
+            </div>
+            <div *ngIf="more10" class="company__info info-company">
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>148. Текстиль</p>
+                    </div>
+                    <div class="info-company__photo">
+                        <img src="{{ 'assets/photo/art100/101.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
+                    </div>
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>149. Фэшн</p>
+                    </div>
+                    <div class="info-company__photo">
+                        <img src="{{ 'assets/photo/art100/102.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
+                    </div>
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>150. Статуэтки</p>
+                    </div>
+                    <div class="info-company__photo">
+                        <img src="{{ 'assets/photo/art100/103.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
+                    </div>
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>151. Подсвечники</p>
+                    </div>
+                    <div class="info-company__photo">
+                        <img src="{{ 'assets/photo/art100/104.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
+                    </div>
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>152. Часы</p>
+                    </div>
+                    <div class="info-company__photo">
+                        <img src="{{ 'assets/photo/art100/105.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
+                    </div>
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>153. Сферы</p>
+                    </div>
+                    <div class="info-company__photo">
+                        <img src="{{ 'assets/photo/art100/106.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
+                    </div>
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>154. Символика</p>
+                    </div>
+                    <div class="info-company__photo">
+                        <img src="{{ 'assets/photo/art100/106.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
+                    </div>
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>155. Шкатулки</p>
+                    </div>
+                    <div class="info-company__photo">
+                        <img src="{{ 'assets/photo/art100/105.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
+                    </div>
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>156. Аксессуары для ювелирных изделий</p>
+                    </div>
+                    <div class="info-company__photo">
+                        <img src="{{ 'assets/photo/art100/106.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
+                    </div>
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>157. Сувениры</p>
+                    </div>
+                    <div class="info-company__photo">
+                        <img src="{{ 'assets/photo/art100/106.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
+                    </div>
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+            </div>
+            <div *ngIf="show1"  class="company__lists">
+                <span class="company__item">{{more11 ? '⯭' : '⯯'}}</span>
+                <h1 (click)="more11 = !more11">Аксессуары для дома</h1>
+                <span class="company__item">{{more11 ? '⯭' : '⯯'}}</span>
+            </div>
+            <div *ngIf="more11" class="company__info info-company">
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>158. Ванные принадлежности</p>
+                    </div>
+                    <div class="info-company__photo">
+                        <img src="{{ 'assets/photo/art100/101.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
+                    </div>
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>159. Кухоные принадлежности</p>
+                    </div>
+                    <div class="info-company__photo">
+                        <img src="{{ 'assets/photo/art100/102.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
+                    </div>
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+            </div>
+            <div *ngIf="show1"  class="company__lists">
+                <span class="company__item">{{more12 ? '⯭' : '⯯'}}</span>
+                <h1 (click)="more12 = !more12">Офисные аксессуары</h1>
+                <span class="company__item">{{more12 ? '⯭' : '⯯'}}</span>
+            </div>
+            <div *ngIf="more12" class="company__info info-company">
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>160. Канцелярские принадлежности</p>
+                    </div>
+                    <div class="info-company__photo">
+                        <img src="{{ 'assets/photo/art100/101.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
+                    </div>
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>161. Мерч</p>
+                    </div>
+                    <div class="info-company__photo">
+                        <img src="{{ 'assets/photo/art100/102.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
+                    </div>
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="info-company__card">
-          <div class="info-company__name">
-            <p>106. Фонтаны и водопады с бассейнами</p>
-          </div>
-          <div class="info-company__photo">
-            <img src="{{ 'assets/photo/art100/106.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
-          </div>
-          <div class="info-company__size">
-            <p>23</p>
-          </div>
-        </div>
-        <div class="info-company__card">
-          <div class="info-company__name">
-            <p>107. Фонтаны и водопады с шарами</p>
-          </div>
-          <div class="info-company__photo">
-            <img src="{{ 'assets/photo/art100/107.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
-          </div>
-          <div class="info-company__size">
-            <p>23</p>
-          </div>
-        </div>
-        <div class="info-company__card">
-          <div class="info-company__name">
-            <p>108. Фонтаны и водопады</p>
-          </div>
-          <div class="info-company__photo">
-            <img src="{{ 'assets/photo/art100/108.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
-          </div>
-          <div class="info-company__size">
-            <p>23</p>
-          </div>
-        </div>
-        <div class="info-company__card">
-          <div class="info-company__name">
-            <p>110. Питьевые фонтаны</p>
-          </div>
-          <div class="info-company__photo">
-            <img src="{{ 'assets/photo/art100/110.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
-          </div>
-          <div class="info-company__size">
-            <p>23</p>
-          </div>
-        </div>
-        <div class="info-company__card">
-          <div class="info-company__name">
-            <p>111. Умывальники</p>
-          </div>
-          <div class="info-company__photo">
-            <img src="{{ 'assets/photo/art100/111.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
-          </div>
-          <div class="info-company__size">
-            <p>23</p>
-          </div>
-        </div>
-      </div>
     </div>
     <div class="company__box">
       <div class="company__title">
