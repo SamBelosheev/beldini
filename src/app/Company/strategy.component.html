@@ -705,728 +705,3061 @@
     </div>
     <div class="company__box">
       <div class="company__title">
-        <span class="company__item">{{show1 ? '⯭' : '⯯'}}</span>
-        <h1 (click)="show1 = !show1">АРХИТЕКТУРНЫЙ МРАМОР</h1>
-        <span class="company__item">{{show1 ? '⯭' : '⯯'}}</span>
+        <span class="company__item">{{under1 ? '⯭' : '⯯'}}</span>
+        <h1 (click)="under1 = !under1">АРХИТЕКТУРНЫЙ МРАМОР</h1>
+        <span class="company__item">{{under1 ? '⯭' : '⯯'}}</span>
       </div>
-      <div *ngIf="show1" class="company__info info-company">
-        <div class="info-company__card">
-          <div class="info-company__name">
-            <p>201. Фасады</p>
-          </div>
-          <div class="info-company__photo">
-            <img src="{{ 'assets/photo/art200/201.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
-          </div>
-          <div class="info-company__size">
-            <p>23</p>
-          </div>
+        <div  *ngIf="under1" class="company__under">
+            <div class="company__title">
+                <span class="company__item">{{show2 ? '⯭' : '⯯'}}</span>
+                <h1 (click)="show2 = !show2">ХУДОЖЕСТВЕННЫЕ КОМПОЗИТНЫЕ</h1>
+                <span class="company__item">{{show2 ? '⯭' : '⯯'}}</span>
+            </div>
+            <div *ngIf="show2"  class="company__lists">
+                <span class="company__item">{{more13 ? '⯭' : '⯯'}}</span>
+                <h1 (click)="more13 = !more13">Экстерьерные решения</h1>
+                <span class="company__item">{{more13 ? '⯭' : '⯯'}}</span>
+            </div>
+            <div *ngIf="more13" class="company__info info-company">
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>201. Фасады</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>202. Входные группы</p>
+                    </div>
+                    <div class="info-company__photo">
+                        <img src="{{ 'assets/photo/art100/102.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
+                    </div>
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+
+            </div>
+            <div *ngIf="show2"  class="company__lists">
+                <span class="company__item">{{more14 ? '⯭' : '⯯'}}</span>
+                <h1 (click)="more14 = !more14">Интерьерные решения</h1>
+                <span class="company__item">{{more14 ? '⯭' : '⯯'}}</span>
+            </div>
+            <div *ngIf="more14" class="company__info info-company">
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>203. Лестницы</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>204. Галереи</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>205. Каминные залы</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>206. Хамамы, джакузи</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>207. Ресепшены</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>208. Бары</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+            </div>
+            <div *ngIf="show2"  class="company__lists">
+                <span class="company__item">{{more15 ? '⯭' : '⯯'}}</span>
+                <h1 (click)="more15 = !more15">Ограждения</h1>
+                <span class="company__item">{{more15 ? '⯭' : '⯯'}}</span>
+            </div>
+            <div *ngIf="more15" class="company__info info-company">
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>209. Заборы</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>210. Баллюстрады</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>211. Балконы</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="info-company__card">
-          <div class="info-company__name">
-            <p>202. Входные группы</p>
-          </div>
-          <div class="info-company__photo">
-            <img src="{{ 'assets/photo/art200/202.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
-          </div>
-          <div class="info-company__size">
-            <p>23</p>
-          </div>
+        <div  *ngIf="under1" class="company__under">
+            <div class="company__title">
+                <span class="company__item">{{show3 ? '⯭' : '⯯'}}</span>
+                <h1 (click)="show3 = !show3">ХУДОЖЕСТВЕННЫЕ ИЗДЕЛИЯ</h1>
+                <span class="company__item">{{show3 ? '⯭' : '⯯'}}</span>
+            </div>
+            <div *ngIf="show3"  class="company__lists">
+                <span class="company__item">{{more15 ? '⯭' : '⯯'}}</span>
+                <h1 (click)="more15 = !more15">Цельные колонны</h1>
+                <span class="company__item">{{more15 ? '⯭' : '⯯'}}</span>
+            </div>
+            <div *ngIf="more15" class="company__info info-company">
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>212. Скульптурные колонны</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>213. Круглые колонны</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>214. Прямоугольные колонны</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+            </div>
+            <div *ngIf="show3"  class="company__lists">
+                <span class="company__item">{{more16 ? '⯭' : '⯯'}}</span>
+                <h1 (click)="more16 = !more16">Сборные колонны</h1>
+                <span class="company__item">{{more16 ? '⯭' : '⯯'}}</span>
+            </div>
+            <div *ngIf="more16" class="company__info info-company">
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>215. Стволы полуколонн</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>216. Базы колонн</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>217. Капители колонн</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="info-company__card">
-          <div class="info-company__name">
-            <p>203. Лестницы</p>
-          </div>
-          <div class="info-company__photo">
-            <img src="{{ 'assets/photo/art200/203.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
-          </div>
-          <div class="info-company__size">
-            <p>23</p>
-          </div>
+        <div  *ngIf="under1" class="company__under">
+            <div class="company__title">
+                <span class="company__item">{{show7 ? '⯭' : '⯯'}}</span>
+                <h1 (click)="show7 = !show7">ЛЕСТНИЦЫ И ОГРАЖДЕНИЯ</h1>
+                <span class="company__item">{{show7 ? '⯭' : '⯯'}}</span>
+            </div>
+            <div *ngIf="show7" class="company__info info-company">
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>218. Заборные столбы</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>219. Заходные столбы</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>220. Опорные и промежуточные столбы</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>221. Ограждающие панели</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>222. Балясины</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>223. Навершие столбов</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>224. Перила</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>225. Мозаичные ступени</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="info-company__card">
-          <div class="info-company__name">
-            <p>204. Галереи</p>
-          </div>
-          <div class="info-company__photo">
-            <img src="{{ 'assets/photo/art200/204.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
-          </div>
-          <div class="info-company__size">
-            <p>23</p>
-          </div>
+        <div  *ngIf="under1" class="company__under">
+            <div class="company__title">
+                <span class="company__item">{{show8 ? '⯭' : '⯯'}}</span>
+                <h1 (click)="show8 = !show8">ПОРТАЛЫ</h1>
+                <span class="company__item">{{show8 ? '⯭' : '⯯'}}</span>
+            </div>
+            <div *ngIf="show8" class="company__info info-company">
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>226. Арочные порталы</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>227. Прямоугольные порталы</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="info-company__card">
-          <div class="info-company__name">
-            <p>205. Каминные залы</p>
-          </div>
-          <div class="info-company__photo">
-            <img src="{{ 'assets/photo/art200/205.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
-          </div>
-          <div class="info-company__size">
-            <p>23</p>
-          </div>
+        <div  *ngIf="under1" class="company__under">
+            <div class="company__title">
+                <span class="company__item">{{show9 ? '⯭' : '⯯'}}</span>
+                <h1 (click)="show9 = !show9">ПАНЕЛИ И ПЛИТКА</h1>
+                <span class="company__item">{{show9 ? '⯭' : '⯯'}}</span>
+            </div>
+            <div *ngIf="show9" class="company__info info-company">
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>229. Барельефные панели и плитка</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>228. Мозаичные панели и плитка</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>230. Фигурные панели и плитка</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="info-company__card">
-          <div class="info-company__name">
-            <p>206. Хаммамы, джакузи</p>
-          </div>
-          <div class="info-company__photo">
-            <img src="{{ 'assets/photo/art200/206.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
-          </div>
-          <div class="info-company__size">
-            <p>23</p>
-          </div>
+        <div  *ngIf="under1" class="company__under">
+            <div class="company__title">
+                <span class="company__item">{{show10 ? '⯭' : '⯯'}}</span>
+                <h1 (click)="show10 = !show10">АРХИТЕКТУРНЫЕ ЭЛЕМЕНТЫ ФАСАДА</h1>
+                <span class="company__item">{{show10 ? '⯭' : '⯯'}}</span>
+            </div>
+            <div *ngIf="show10" class="company__info info-company">
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>231. Консоли, кронштейны, модульоны</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>232. Геральдика, вывески, таблички</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>233. Фестоны(герлянды), орнаменты</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>234. Молдинги, наличники</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>235. Пилястры</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>236. Бровки, карнизы, лопатки</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>237. Розетки, замковые камни</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="info-company__card">
-          <div class="info-company__name">
-            <p>207. Респешены</p>
-          </div>
-          <div class="info-company__photo">
-            <img src="{{ 'assets/photo/art200/207.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
-          </div>
-          <div class="info-company__size">
-            <p>23</p>
-          </div>
-        </div>
-        <div class="info-company__card">
-          <div class="info-company__name">
-            <p>208. Бары</p>
-          </div>
-          <div class="info-company__photo">
-            <img src="{{ 'assets/photo/art200/208.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
-          </div>
-          <div class="info-company__size">
-            <p>23</p>
-          </div>
-        </div>
-        <div class="info-company__card">
-          <div class="info-company__name">
-            <p>209. Заборы</p>
-          </div>
-          <div class="info-company__photo">
-            <img src="{{ 'assets/photo/art200/209.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
-          </div>
-          <div class="info-company__size">
-            <p>23</p>
-          </div>
-        </div>
-        <div class="info-company__card">
-          <div class="info-company__name">
-            <p>210. Баллюстрады</p>
-          </div>
-          <div class="info-company__photo">
-            <img src="{{ 'assets/photo/art200/210.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
-          </div>
-          <div class="info-company__size">
-            <p>23</p>
-          </div>
-        </div>
-    </div>
-    </div>
-    <div class="company__box">
-      <div class="company__title">
-        <span class="company__item">{{show2 ? '⯭' : '⯯'}}</span>
-        <h1 (click)="show2 = !show2">СТРОИТЕЛЬНЫЙ МРАМОР</h1>
-        <span class="company__item">{{show2 ? '⯭' : '⯯'}}</span>
-      </div>
-      <div *ngIf="show2" class="company__info info-company">
-        <div class="info-company__card">
-          <div class="info-company__name">
-            <p>301. Фасады
-            </p>
-          </div>
-          <div class="info-company__photo">
-            <img src="{{ 'assets/photo/art300/301.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
-          </div>
-          <div class="info-company__size">
-            <p>23</p>
-          </div>
-        </div>
-        <div class="info-company__card">
-          <div class="info-company__name">
-            <p>302. Входные группы</p>
-          </div>
-          <div class="info-company__photo">
-            <img src="{{ 'assets/photo/art300/302.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
-          </div>
-          <div class="info-company__size">
-            <p>23</p>
-          </div>
-        </div>
-        <div class="info-company__card">
-          <div class="info-company__name">
-            <p>303. Лестницы</p>
-          </div>
-          <div class="info-company__photo">
-            <img src="{{ 'assets/photo/art300/303.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
-          </div>
-          <div class="info-company__size">
-            <p>23</p>
-          </div>
-        </div>
-        <div class="info-company__card">
-          <div class="info-company__name">
-            <p>304. Ресепшены</p>
-          </div>
-          <div class="info-company__photo">
-            <img src="{{ 'assets/photo/art300/304.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
-          </div>
-          <div class="info-company__size">
-            <p>23</p>
-          </div>
-        </div>
-        <div class="info-company__card">
-          <div class="info-company__name">
-            <p>305. Барные стойки</p>
-          </div>
-          <div class="info-company__photo">
-            <img src="{{ 'assets/photo/art300/305.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
-          </div>
-          <div class="info-company__size">
-            <p>23</p>
-          </div>
-        </div>
-        <div class="info-company__card">
-          <div class="info-company__name">
-            <p>306. Кухни</p>
-          </div>
-          <div class="info-company__photo">
-            <img src="{{ 'assets/photo/art300/306.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
-          </div>
-          <div class="info-company__size">
-            <p>23</p>
-          </div>
-        </div>
-        <div class="info-company__card">
-          <div class="info-company__name">
-            <p>307. Ванные комнаты</p>
-          </div>
-          <div class="info-company__photo">
-            <img src="{{ 'assets/photo/art300/307.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
-          </div>
-          <div class="info-company__size">
-            <p>23</p>
-          </div>
-        </div>
-        <div class="info-company__card">
-          <div class="info-company__name">
-            <p>308. Бассейны</p>
-          </div>
-          <div class="info-company__photo">
-            <img src="{{ 'assets/photo/art300/308.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
-          </div>
-          <div class="info-company__size">
-            <p>23</p>
-          </div>
-        </div>
-        <div class="info-company__card">
-          <div class="info-company__name">
-            <p>309. Баллюстрады</p>
-          </div>
-          <div class="info-company__photo">
-            <img src="{{ 'assets/photo/art300/309.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
-          </div>
-          <div class="info-company__size">
-            <p>23</p>
-          </div>
-        </div>
-        <div class="info-company__card">
-          <div class="info-company__name">
-            <p>310. Балконы</p>
-          </div>
-          <div class="info-company__photo">
-            <img src="{{ 'assets/photo/art300/310.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
-          </div>
-          <div class="info-company__size">
-            <p>23</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="company__box">
-      <div class="company__title">
-        <span class="company__item">{{show3 ? '⯭' : '⯯'}}</span>
-        <h1 (click)="show3 = !show3">РИТУАЛЬНЫЙ МРАМОР</h1>
-        <span class="company__item">{{show3 ? '⯭' : '⯯'}}</span>
-      </div>
-      <div *ngIf="show3" class="company__info info-company">
-        <div class="info-company__card">
-          <div class="info-company__name">
-            <p>401. Скульптурные мемориалы</p>
-          </div>
-          <div class="info-company__photo">
-            <img src="{{ 'assets/photo/art400/401.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
-          </div>
-          <div class="info-company__size">
-            <p>23</p>
-          </div>
-        </div>
-        <div class="info-company__card">
-          <div class="info-company__name">
-            <p>402. Памятные мемориалы</p>
-          </div>
-          <div class="info-company__photo">
-            <img src="{{ 'assets/photo/art400/402.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
-          </div>
-          <div class="info-company__size">
-            <p>23</p>
-          </div>
-        </div>
-        <div class="info-company__card">
-          <div class="info-company__name">
-            <p>403. Родовые мемориалы</p>
-          </div>
-          <div class="info-company__photo">
-            <img src="{{ 'assets/photo/art400/403.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
-          </div>
-          <div class="info-company__size">
-            <p>23</p>
-          </div>
-        </div>
-        <div class="info-company__card">
-          <div class="info-company__name">
-            <p>404. Мавзолеи</p>
-          </div>
-          <div class="info-company__photo">
-            <img src="{{ 'assets/photo/art400/404.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
-          </div>
-          <div class="info-company__size">
-            <p>23</p>
-          </div>
-        </div>
-        <div class="info-company__card">
-          <div class="info-company__name">
-            <p>405. Усыпальницы</p>
-          </div>
-          <div class="info-company__photo">
-            <img src="{{ 'assets/photo/art400/405.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
-          </div>
-          <div class="info-company__size">
-            <p>23</p>
-          </div>
-        </div>
-        <div class="info-company__card">
-          <div class="info-company__name">
-            <p>406. Мемориальные доски</p>
-          </div>
-          <div class="info-company__photo">
-            <img src="{{ 'assets/photo/art400/406.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
-          </div>
-          <div class="info-company__size">
-            <p>23</p>
-          </div>
-        </div>
-        <div class="info-company__card">
-          <div class="info-company__name">
-            <p>407. Кенотафы</p>
-          </div>
-          <div class="info-company__photo">
-            <img src="{{ 'assets/photo/art400/407.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
-          </div>
-          <div class="info-company__size">
-            <p>23</p>
-          </div>
-        </div>
-        <div class="info-company__card">
-          <div class="info-company__name">
-            <p>408. Коллонады</p>
-          </div>
-          <div class="info-company__photo">
-            <img src="{{ 'assets/photo/art400/408.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
-          </div>
-          <div class="info-company__size">
-            <p>23</p>
-          </div>
-        </div>
-        <div class="info-company__card">
-          <div class="info-company__name">
-            <p>409. Аркады, портики</p>
-          </div>
-          <div class="info-company__photo">
-            <img src="{{ 'assets/photo/art400/409.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
-          </div>
-          <div class="info-company__size">
-            <p>23</p>
-          </div>
-        </div>
-        <div class="info-company__card">
-          <div class="info-company__name">
-            <p>410. Мужские портретные скульптуры</p>
-          </div>
-          <div class="info-company__photo">
-            <img src="{{ 'assets/photo/art400/410.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
-          </div>
-          <div class="info-company__size">
-            <p>23</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="company__box">
-      <div class="company__title">
-        <span class="company__item">{{show4 ? '⯭' : '⯯'}}</span>
-        <h1 (click)="show4 = !show4">РЕЛИГИОЗНЫЙ МРАМОР</h1>
-        <span class="company__item">{{show4 ? '⯭' : '⯯'}}</span>
-      </div>
-      <div *ngIf="show4" class="company__info info-company">
-        <div class="info-company__card">
-          <div class="info-company__name">
-            <p>501. Религиозные фасады</p>
-          </div>
-          <div class="info-company__photo">
-            <img src="{{ 'assets/photo/art500/501.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
-          </div>
-          <div class="info-company__size">
-            <p>23</p>
-          </div>
-        </div>
-        <div class="info-company__card">
-          <div class="info-company__name">
-            <p>502. Религиозные входные группы</p>
-          </div>
-          <div class="info-company__photo">
-            <img src="{{ 'assets/photo/art500/502.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
-          </div>
-          <div class="info-company__size">
-            <p>23</p>
-          </div>
-        </div>
-        <div class="info-company__card">
-          <div class="info-company__name">
-            <p>503. Помещения для молящихся, алтари</p>
-          </div>
-          <div class="info-company__photo">
-            <img src="{{ 'assets/photo/art500/503.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
-          </div>
-          <div class="info-company__size">
-            <p>23</p>
-          </div>
-        </div>
-        <div class="info-company__card">
-          <div class="info-company__name">
-            <p>504. Архитектурные элементы</p>
-          </div>
-          <div class="info-company__photo">
-            <img src="{{ 'assets/photo/art500/504.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
-          </div>
-          <div class="info-company__size">
-            <p>23</p>
-          </div>
-        </div>
-        <div class="info-company__card">
-          <div class="info-company__name">
-            <p>505. Эдикулы</p>
-          </div>
-          <div class="info-company__photo">
-            <img src="{{ 'assets/photo/art500/505.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
-          </div>
-          <div class="info-company__size">
-            <p>23</p>
-          </div>
-        </div>
-        <div class="info-company__card">
-          <div class="info-company__name">
-            <p>506. Иконостасы</p>
-          </div>
-          <div class="info-company__photo">
-            <img src="{{ 'assets/photo/art500/506.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
-          </div>
-          <div class="info-company__size">
-            <p>23</p>
-          </div>
-        </div>
-        <div class="info-company__card">
-          <div class="info-company__name">
-            <p>507. Киоты</p>
-          </div>
-          <div class="info-company__photo">
-            <img src="{{ 'assets/photo/art500/507.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
-          </div>
-          <div class="info-company__size">
-            <p>23</p>
-          </div>
-        </div>
-        <div class="info-company__card">
-          <div class="info-company__name">
-            <p>508. Раки для мощей (ковчеги)</p>
-          </div>
-          <div class="info-company__photo">
-            <img src="{{ 'assets/photo/art500/508.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
-          </div>
-          <div class="info-company__size">
-            <p>23</p>
-          </div>
-        </div>
-        <div class="info-company__card">
-          <div class="info-company__name">
-            <p>509. Купели</p>
-          </div>
-          <div class="info-company__photo">
-            <img src="{{ 'assets/photo/art500/509.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
-          </div>
-          <div class="info-company__size">
-            <p>23</p>
-          </div>
-        </div>
-        <div class="info-company__card">
-          <div class="info-company__name">
-            <p>510. Престолы</p>
-          </div>
-          <div class="info-company__photo">
-            <img src="{{ 'assets/photo/art500/510.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
-          </div>
-          <div class="info-company__size">
-            <p>23</p>
-          </div>
-        </div>
-      </div>
     </div>
     <div class="company__box">
       <div class="company__title">
-        <span class="company__item">{{show5 ? '⯭' : '⯯'}}</span>
-        <h1 (click)="show5 = !show5">ПРОИЗВОДСТВЕННЫЙ МРАМОР</h1>
-        <span class="company__item">{{show5 ? '⯭' : '⯯'}}</span>
+        <span class="company__item">{{under2 ? '⯭' : '⯯'}}</span>
+        <h1 (click)="under2 = !under2">СТРОИТЕЛЬНЫЙ МРАМОР</h1>
+        <span class="company__item">{{under2 ? '⯭' : '⯯'}}</span>
       </div>
-      <div *ngIf="show5" class="company__info info-company">
-        <div class="info-company__card">
-          <div class="info-company__name">
-            <p>601. Крупногабаритные глыбы</p>
-          </div>
-          <div class="info-company__photo">
-            <img src="{{ 'assets/photo/art200/201.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
-          </div>
-          <div class="info-company__size">
-            <p>23</p>
-          </div>
+        <div  *ngIf="under2" class="company__under">
+            <div class="company__title">
+                <span class="company__item">{{show11 ? '⯭' : '⯯'}}</span>
+                <h1 (click)="show11 = !show11">ГОТОВЫЕ РЕШЕНИЯ</h1>
+                <span class="company__item">{{show11 ? '⯭' : '⯯'}}</span>
+            </div>
+            <div *ngIf="show11"  class="company__lists">
+                <span class="company__item">{{more17 ? '⯭' : '⯯'}}</span>
+                <h1 (click)="more17 = !more17">Экстерьерные решения</h1>
+                <span class="company__item">{{more17 ? '⯭' : '⯯'}}</span>
+            </div>
+            <div *ngIf="more17" class="company__info info-company">
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>301. Фасады</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>302. Входные группы</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+            </div>
+            <div *ngIf="show11"  class="company__lists">
+                <span class="company__item">{{more18 ? '⯭' : '⯯'}}</span>
+                <h1 (click)="more18 = !more18">Интерьерные решения</h1>
+                <span class="company__item">{{more18 ? '⯭' : '⯯'}}</span>
+            </div>
+            <div *ngIf="more18" class="company__info info-company">
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>303. Лестницы</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>304. Ресепшены</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>305. Барные стойки</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>306. Кухни</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>307. Ванные комнаты</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>308. Бассейны</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+            </div>
+            <div *ngIf="show11"  class="company__lists">
+                <span class="company__item">{{more19 ? '⯭' : '⯯'}}</span>
+                <h1 (click)="more19 = !more19">Ограждения</h1>
+                <span class="company__item">{{more19 ? '⯭' : '⯯'}}</span>
+            </div>
+            <div *ngIf="more19" class="company__info info-company">
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>309. Баллюстрады</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>310. Балконы</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="info-company__card">
-          <div class="info-company__name">
-            <p>602. Высшего сорта</p>
-          </div>
-          <div class="info-company__photo">
-            <img src="{{ 'assets/photo/art200/202.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
-          </div>
-          <div class="info-company__size">
-            <p>23</p>
-          </div>
+        <div  *ngIf="under2" class="company__under">
+            <div class="company__title">
+                <span class="company__item">{{show12 ? '⯭' : '⯯'}}</span>
+                <h1 (click)="show12 = !show12">АРХИТЕКТУРНЫЕ СООРУЖЕНИЯ</h1>
+                <span class="company__item">{{show12 ? '⯭' : '⯯'}}</span>
+            </div>
+            <div *ngIf="show12" class="company__info info-company">
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>311. Беседки, перголы</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>312. Фонтаны, беседки, пруды</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="info-company__card">
-          <div class="info-company__name">
-            <p>603. 1 сорта</p>
-          </div>
-          <div class="info-company__photo">
-            <img src="{{ 'assets/photo/art200/203.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
-          </div>
-          <div class="info-company__size">
-            <p>23</p>
-          </div>
+        <div  *ngIf="under2" class="company__under">
+            <div class="company__title">
+                <span class="company__item">{{show14 ? '⯭' : '⯯'}}</span>
+                <h1 (click)="show14 = !show14">ЛЕСТНИЦЫ И ОГРАЖДЕНИЯ</h1>
+                <span class="company__item">{{show14 ? '⯭' : '⯯'}}</span>
+            </div>
+            <div *ngIf="show13"  class="company__lists">
+                <span class="company__item">{{more20 ? '⯭' : '⯯'}}</span>
+                <h1 (click)="more20 = !more20">Колонны</h1>
+                <span class="company__item">{{more20 ? '⯭' : '⯯'}}</span>
+            </div>
+            <div *ngIf="more20" class="company__info info-company">
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>313. Круглые колонны</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>314. Прямоугольные колонны</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>315. Наборные стволы колонн</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>316. Базы и капители</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="info-company__card">
-          <div class="info-company__name">
-            <p>604. 2 сорта</p>
-          </div>
-          <div class="info-company__photo">
-            <img src="{{ 'assets/photo/art200/204.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
-          </div>
-          <div class="info-company__size">
-            <p>23</p>
-          </div>
+        <div  *ngIf="under2" class="company__under">
+            <div class="company__title">
+                <span class="company__item">{{show15 ? '⯭' : '⯯'}}</span>
+                <h1 (click)="show15 = !show15">ЛЕСТНИЦЫ И ОГРАЖДЕНИЯ</h1>
+                <span class="company__item">{{show15 ? '⯭' : '⯯'}}</span>
+            </div>
+            <div *ngIf="show15"  class="company__lists">
+                <span class="company__item">{{more21 ? '⯭' : '⯯'}}</span>
+                <h1 (click)="more21 = !more21">Парковочные изделия</h1>
+                <span class="company__item">{{more21 ? '⯭' : '⯯'}}</span>
+            </div>
+            <div *ngIf="more21" class="company__info info-company">
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>317. Полусферы</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>318. Болларды</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+            </div>
+            <div *ngIf="show15"  class="company__lists">
+                <span class="company__item">{{more22 ? '⯭' : '⯯'}}</span>
+                <h1 (click)="more22 = !more22">Элементы ограждений</h1>
+                <span class="company__item">{{more22 ? '⯭' : '⯯'}}</span>
+            </div>
+            <div *ngIf="more22" class="company__info info-company">
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>319. Опорные столбы</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>320. Балясины</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>321. Тумбы</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>322. Подбалясенники</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>323. Крышки столбов</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>324. Шары на подставке</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>325. Перила</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+            </div>
+            <div *ngIf="show15"  class="company__lists">
+                <span class="company__item">{{more23 ? '⯭' : '⯯'}}</span>
+                <h1 (click)="more23 = !more23">Элементы лестниц</h1>
+                <span class="company__item">{{more23 ? '⯭' : '⯯'}}</span>
+            </div>
+            <div *ngIf="more23" class="company__info info-company">
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>326. Ступени</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>327. Подступенки</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>328. Тетивы</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+            </div>
+            <div *ngIf="show15"  class="company__lists">
+                <span class="company__item">{{more24 ? '⯭' : '⯯'}}</span>
+                <h1 (click)="more24 = !more24">Декоративные кирпичи</h1>
+                <span class="company__item">{{more24 ? '⯭' : '⯯'}}</span>
+            </div>
+            <div *ngIf="more24" class="company__info info-company">
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>329. Кирпичи</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="info-company__card">
-          <div class="info-company__name">
-            <p>605. 3 сорта</p>
-          </div>
-          <div class="info-company__photo">
-            <img src="{{ 'assets/photo/art200/205.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
-          </div>
-          <div class="info-company__size">
-            <p>23</p>
-          </div>
+        <div  *ngIf="under2" class="company__under">
+            <div class="company__title">
+                <span class="company__item">{{show16 ? '⯭' : '⯯'}}</span>
+                <h1 (click)="show16 = !show16">ИЗДЕЛИЯ ДЛЯ РЕМОНТА</h1>
+                <span class="company__item">{{show16 ? '⯭' : '⯯'}}</span>
+            </div>
+            <div *ngIf="show16"  class="company__lists">
+                <span class="company__item">{{more25 ? '⯭' : '⯯'}}</span>
+                <h1 (click)="more25 = !more25">Порталы проёмов</h1>
+                <span class="company__item">{{more25 ? '⯭' : '⯯'}}</span>
+            </div>
+            <div *ngIf="more25" class="company__info info-company">
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>330. Дверные и оконные порталы</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+            </div>
+            <div *ngIf="show16"  class="company__lists">
+                <span class="company__item">{{more26 ? '⯭' : '⯯'}}</span>
+                <h1 (click)="more26 = !more26">Водные изделия</h1>
+                <span class="company__item">{{more26 ? '⯭' : '⯯'}}</span>
+            </div>
+            <div *ngIf="more26" class="company__info info-company">
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>331. Кухонные мойки</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>332. Душевые поддоны</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+            </div>
+            <div *ngIf="show16"  class="company__lists">
+                <span class="company__item">{{more27 ? '⯭' : '⯯'}}</span>
+                <h1 (click)="more27 = !more27">Столешницы</h1>
+                <span class="company__item">{{more27 ? '⯭' : '⯯'}}</span>
+            </div>
+            <div *ngIf="more27" class="company__info info-company">
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>333. Обеденные столешницы</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>334. Кухонные столешницы</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>335. Журнальные столешницы</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+            </div>
+            <div *ngIf="show16"  class="company__lists">
+                <span class="company__item">{{more28 ? '⯭' : '⯯'}}</span>
+                <h1 (click)="more28 = !more28">Подоконики</h1>
+                <span class="company__item">{{more28 ? '⯭' : '⯯'}}</span>
+            </div>
+            <div *ngIf="more28" class="company__info info-company">
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>336. Подоконики</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+            </div>
+            <div *ngIf="show16"  class="company__lists">
+                <span class="company__item">{{more29 ? '⯭' : '⯯'}}</span>
+                <h1 (click)="more29 = !more29">Плинтуса</h1>
+                <span class="company__item">{{more29 ? '⯭' : '⯯'}}</span>
+            </div>
+            <div *ngIf="more29" class="company__info info-company">
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>337. Фигурные плинтуса</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>338. Угловые прямоугольные плинтуса</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>339. Прямые плинтуса</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="info-company__card">
-          <div class="info-company__name">
-            <p>606. Производственные остатки</p>
-          </div>
-          <div class="info-company__photo">
-            <img src="{{ 'assets/photo/art200/206.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
-          </div>
-          <div class="info-company__size">
-            <p>23</p>
-          </div>
+        <div  *ngIf="under2" class="company__under">
+            <div class="company__title">
+                <span class="company__item">{{show17 ? '⯭' : '⯯'}}</span>
+                <h1 (click)="show17 = !show17">ОТДЕЛОЧНЫЕ МАТЕРИАЛЫ</h1>
+                <span class="company__item">{{show17 ? '⯭' : '⯯'}}</span>
+            </div>
+            <div *ngIf="show17"  class="company__lists">
+                <span class="company__item">{{more30 ? '⯭' : '⯯'}}</span>
+                <h1 (click)="more30 = !more30">Напольные и стеновые панели</h1>
+                <span class="company__item">{{more30 ? '⯭' : '⯯'}}</span>
+            </div>
+            <div *ngIf="more30" class="company__info info-company">
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>340. Панели и плитка 40мм</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>341. Панели и плитка 30мм</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>342. Панели и плитка 20мм</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+            </div>
+            <div *ngIf="show17"  class="company__lists">
+                <span class="company__item">{{more31 ? '⯭' : '⯯'}}</span>
+                <h1 (click)="more31 = !more31">Декоративная плитка</h1>
+                <span class="company__item">{{more31 ? '⯭' : '⯯'}}</span>
+            </div>
+            <div *ngIf="more31" class="company__info info-company">
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>343. Колотая плитка</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>344. Плитка с фаской</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>345. Полированая плитка</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>346. Рустовые камни</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="info-company__card">
-          <div class="info-company__name">
-            <p>607. Слэбы h50 мм</p>
-          </div>
-          <div class="info-company__photo">
-            <img src="{{ 'assets/photo/art200/207.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
-          </div>
-          <div class="info-company__size">
-            <p>23</p>
-          </div>
+        <div  *ngIf="under2" class="company__under">
+            <div class="company__title">
+                <span class="company__item">{{show18 ? '⯭' : '⯯'}}</span>
+                <h1 (click)="show18 = !show18">ЛАНШАФТ И ДОРОЖКИ</h1>
+                <span class="company__item">{{show18 ? '⯭' : '⯯'}}</span>
+            </div>
+            <div *ngIf="show18"  class="company__lists">
+                <span class="company__item">{{more32 ? '⯭' : '⯯'}}</span>
+                <h1 (click)="more32 = !more32">Брусчатка</h1>
+                <span class="company__item">{{more32 ? '⯭' : '⯯'}}</span>
+            </div>
+            <div *ngIf="more32" class="company__info info-company">
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>347. Колотая брусчатка</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>348. Галтованная брусчатка</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>349. Пиленная брусчатка</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+            </div>
+            <div *ngIf="show18"  class="company__lists">
+                <span class="company__item">{{more33 ? '⯭' : '⯯'}}</span>
+                <h1 (click)="more33 = !more33">Брекчия (окол)</h1>
+                <span class="company__item">{{more33 ? '⯭' : '⯯'}}</span>
+            </div>
+            <div *ngIf="more33" class="company__info info-company">
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>350. Колотая брекчия</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>351. Галтованая брекчия</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+            </div>
+            <div *ngIf="show18"  class="company__lists">
+                <span class="company__item">{{more34 ? '⯭' : '⯯'}}</span>
+                <h1 (click)="more34 = !more34">Бордюры</h1>
+                <span class="company__item">{{more34 ? '⯭' : '⯯'}}</span>
+            </div>
+            <div *ngIf="more34" class="company__info info-company">
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>352. Садовые бордюры</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+            </div>
+            <div *ngIf="show18"  class="company__lists">
+                <span class="company__item">{{more35 ? '⯭' : '⯯'}}</span>
+                <h1 (click)="more35 = !more35">Декоративные камни</h1>
+                <span class="company__item">{{more35 ? '⯭' : '⯯'}}</span>
+            </div>
+            <div *ngIf="more35" class="company__info info-company">
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>353. Декоративные валуны</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+            </div>
+            <div *ngIf="show18"  class="company__lists">
+                <span class="company__item">{{more36 ? '⯭' : '⯯'}}</span>
+                <h1 (click)="more36 = !more36">Декоративный галтованный щебень</h1>
+                <span class="company__item">{{more36 ? '⯭' : '⯯'}}</span>
+            </div>
+            <div *ngIf="more36" class="company__info info-company">
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>354. Галтованный щебень 120+ мм</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>355. Галтованный щебень 60-120 мм</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>356. Галтованный щебень 90-120 мм</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>357. Галтованный щебень 60-90 мм</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>358. Галтованный щебень 40-70 мм</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>359. Галтованный щебень 20-40 мм</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>360. Галтованный щебень 15-50 мм</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>361. Галтованный щебень 10-20 мм</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>362. Галтованный щебень 5-12 мм</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+            </div>
+            <div *ngIf="show18"  class="company__lists">
+                <span class="company__item">{{more37 ? '⯭' : '⯯'}}</span>
+                <h1 (click)="more37 = !more37">Мраморный щебень</h1>
+                <span class="company__item">{{more37 ? '⯭' : '⯯'}}</span>
+            </div>
+            <div *ngIf="more37" class="company__info info-company">
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>363. Щебень 7-12 мм</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>364. Щебень 5-20 мм</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>365. Щебень 10-20 мм</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>366. Щебень 20-40 мм</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>367. Щебень 40-70 мм</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>368. Щебень 20-150 мм</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>369. Щебень 70-150 мм</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="info-company__card">
-          <div class="info-company__name">
-            <p>611. Фигурные ручной обработки</p>
-          </div>
-          <div class="info-company__photo">
-            <img src="{{ 'assets/photo/art200/208.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
-          </div>
-          <div class="info-company__size">
-            <p>23</p>
-          </div>
-        </div>
-        <div class="info-company__card">
-          <div class="info-company__name">
-            <p>612. Точеные изделия</p>
-          </div>
-          <div class="info-company__photo">
-            <img src="{{ 'assets/photo/art200/209.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
-          </div>
-          <div class="info-company__size">
-            <p>23</p>
-          </div>
-        </div>
-        <div class="info-company__card">
-          <div class="info-company__name">
-            <p>613. Рельефные фрезерованные</p>
-          </div>
-          <div class="info-company__photo">
-            <img src="{{ 'assets/photo/art200/210.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
-          </div>
-          <div class="info-company__size">
-            <p>23</p>
-          </div>
-        </div>
-      </div>
     </div>
     <div class="company__box">
       <div class="company__title">
-        <span class="company__item">{{show6 ? '⯭' : '⯯'}}</span>
-        <h1 (click)="show6 = !show6">ПРОМЫШЛЕННЫЙ МРАМОР</h1>
-        <span class="company__item">{{show6 ? '⯭' : '⯯'}}</span>
+        <span class="company__item">{{under3 ? '⯭' : '⯯'}}</span>
+        <h1 (click)="under3 = !under3">РИТУАЛЬНЫЙ МРАМОР</h1>
+        <span class="company__item">{{under3 ? '⯭' : '⯯'}}</span>
       </div>
-      <div *ngIf="show6" class="company__info info-company">
-        <div class="info-company__card">
-          <div class="info-company__name">
-            <p>701. Мраморная мука КМ-1
-            </p>
-          </div>
-          <div class="info-company__photo">
-            <img src="{{ 'assets/photo/art700/746.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
-          </div>
-          <div class="info-company__size">
-            <p>23</p>
-          </div>
+        <div  *ngIf="under3" class="company__under">
+            <div class="company__title">
+                <span class="company__item">{{show19 ? '⯭' : '⯯'}}</span>
+                <h1 (click)="show19 = !show19">МЕМОРИАЛЫ</h1>
+                <span class="company__item">{{show19 ? '⯭' : '⯯'}}</span>
+            </div>
+            <div *ngIf="show19" class="company__info info-company">
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>401. Скульптурные мемориалы</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>402. Памятные мемориалы</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>403. Родовые мемориалы</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>404. Мавзолеи</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>405. Усыпальницы</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>406. Мемориальные доски</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>407. Кенотафы</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>408. Коллонады</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>409. Аркады, портики</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="info-company__card">
-          <div class="info-company__name">
-            <p>707. Мраморная мука КМ-5S
-            </p>
-          </div>
-          <div class="info-company__photo">
-            <img src="{{ 'assets/photo/art700/746.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
-          </div>
-          <div class="info-company__size">
-            <p>23</p>
-          </div>
+        <div  *ngIf="under3" class="company__under">
+            <div class="company__title">
+                <span class="company__item">{{show20 ? '⯭' : '⯯'}}</span>
+                <h1 (click)="show20 = !show20">Памятники</h1>
+                <span class="company__item">{{show20 ? '⯭' : '⯯'}}</span>
+            </div>
+            <div *ngIf="show20"  class="company__lists">
+                <span class="company__item">{{more38 ? '⯭' : '⯯'}}</span>
+                <h1 (click)="more38 = !more38">Мужские</h1>
+                <span class="company__item">{{more38 ? '⯭' : '⯯'}}</span>
+            </div>
+            <div *ngIf="more38" class="company__info info-company">
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>410. Портретные скульптуры</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>411. Портретные бысты</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>412. Портретные барельефы</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>413. Профессиональные</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>414. Скульптурные</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>415. Барельефные</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>416. Мозаичные</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>417. Мужские с валунами</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>418. Мужские с крестом</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>419. Фигурные</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>420. Прямоугольные</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>421. Комбинированые</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+            </div>
+            <div *ngIf="show20"  class="company__lists">
+                <span class="company__item">{{more39 ? '⯭' : '⯯'}}</span>
+                <h1 (click)="more39 = !more39">Женские</h1>
+                <span class="company__item">{{more39 ? '⯭' : '⯯'}}</span>
+            </div>
+            <div *ngIf="more39" class="company__info info-company">
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>422. Портретные скульптуры</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>423. Портретные бысты</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>424. Портретные барельефы</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>425. Профессиональные</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>426. Скульптурные</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>427. Барельефные</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>428. Мозаичные</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>429. Женские с валунами</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>430. Женские с крестом</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>431. Фигурные</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>432. Прямоугольные</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>433. Комбинированые</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+            </div>
+            <div *ngIf="show20"  class="company__lists">
+                <span class="company__item">{{more40 ? '⯭' : '⯯'}}</span>
+                <h1 (click)="more40 = !more40">Детские</h1>
+                <span class="company__item">{{more40 ? '⯭' : '⯯'}}</span>
+            </div>
+            <div *ngIf="more40" class="company__info info-company">
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>434. Портретные скульптуры</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>435. Портретные барельефы</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>436. Скульптурные</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>437. Барельефные</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>438. Мозаичные</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>439. Детские с валунами</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>440. Детские с крестом</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>441. Фигурные</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>442. Комбинированые</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+            </div>
+            <div *ngIf="show20"  class="company__lists">
+                <span class="company__item">{{more41 ? '⯭' : '⯯'}}</span>
+                <h1 (click)="more41 = !more41">Семейные</h1>
+                <span class="company__item">{{more41 ? '⯭' : '⯯'}}</span>
+            </div>
+            <div *ngIf="more41" class="company__info info-company">
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>443. Портретные скульптуры</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>444. Портретные бысты</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>445. Портретные барельефы</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>446. Скульптурные</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>447. Барельефные</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>448. Мозаичные</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>449. Семейные с валунами</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>450. Семейные с крестом</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>451. Фигурные</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>452. Прямоугольные</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>453. Комбинированые</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+            </div>
+            <div *ngIf="show20"  class="company__lists">
+                <span class="company__item">{{more42 ? '⯭' : '⯯'}}</span>
+                <h1 (click)="more42 = !more42">Семейные животным</h1>
+                <span class="company__item">{{more42 ? '⯭' : '⯯'}}</span>
+            </div>
+            <div *ngIf="more42" class="company__info info-company">
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>454. Животным скульптурные</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>455. Животным с валунами</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>456. Животным малые формы</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+            </div>
+            <div *ngIf="show20"  class="company__lists">
+                <span class="company__item">{{more43 ? '⯭' : '⯯'}}</span>
+                <h1 (click)="more43 = !more43">Конструктивные элементы</h1>
+                <span class="company__item">{{more43 ? '⯭' : '⯯'}}</span>
+            </div>
+            <div *ngIf="more43" class="company__info info-company">
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>457. Надгробные плиты</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>458. Цветники</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+            </div>
+            <div *ngIf="show20"  class="company__lists">
+                <span class="company__item">{{more44 ? '⯭' : '⯯'}}</span>
+                <h1 (click)="more44 = !more44">Портретные изображения</h1>
+                <span class="company__item">{{more44 ? '⯭' : '⯯'}}</span>
+            </div>
+            <div *ngIf="more44" class="company__info info-company">
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>459. Барельефная плитка</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>460. Гравированая и фото печать</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+            </div>
+            <div *ngIf="show20"  class="company__lists">
+                <span class="company__item">{{more45 ? '⯭' : '⯯'}}</span>
+                <h1 (click)="more45 = !more45">Благоустройство памятников</h1>
+                <span class="company__item">{{more45 ? '⯭' : '⯯'}}</span>
+            </div>
+            <div *ngIf="more45" class="company__info info-company">
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>461. Клумбы</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>462. Плиты мощеные</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>463. Декоративный камень</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+            </div>
+            <div *ngIf="show20"  class="company__lists">
+                <span class="company__item">{{more46 ? '⯭' : '⯯'}}</span>
+                <h1 (click)="more46 = !more46">Мебель</h1>
+                <span class="company__item">{{more46 ? '⯭' : '⯯'}}</span>
+            </div>
+            <div *ngIf="more46" class="company__info info-company">
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>464. Столы, лавки/скамейки</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="info-company__card">
-          <div class="info-company__name">
-            <p>710. Мраморная мука КМ-10б
-            </p>
-          </div>
-          <div class="info-company__photo">
-            <img src="{{ 'assets/photo/art700/746.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
-          </div>
-          <div class="info-company__size">
-            <p>23</p>
-          </div>
+        <div  *ngIf="under3" class="company__under">
+            <div class="company__title">
+                <span class="company__item">{{show21 ? '⯭' : '⯯'}}</span>
+                <h1 (click)="show21 = !show21">ПОГРЕБЕНИЕ ПРАХА</h1>
+                <span class="company__item">{{show21 ? '⯭' : '⯯'}}</span>
+            </div>
+            <div *ngIf="show21" class="company__info info-company">
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>465. Колумбарии</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>466. Урны для праха</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>467. Урны для праха животным</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="info-company__card">
-          <div class="info-company__name">
-            <p>714. Мраморная мука КМ-60б
-            </p>
-          </div>
-          <div class="info-company__photo">
-            <img src="{{ 'assets/photo/art700/746.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
-          </div>
-          <div class="info-company__size">
-            <p>23</p>
-          </div>
+        <div  *ngIf="under3" class="company__under">
+            <div class="company__title">
+                <span class="company__item">{{show22 ? '⯭' : '⯯'}}</span>
+                <h1 (click)="show22 = !show22">ЛЕСТНИЦЫ И ОГРАЖДЕНИЯ</h1>
+                <span class="company__item">{{show22 ? '⯭' : '⯯'}}</span>
+            </div>
+            <div *ngIf="show22" class="company__info info-company">
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>468. Ангелы</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>469. Молящиеся</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>470. Скорбящие</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>471. Кошки</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>472. Голуби</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="info-company__card">
-          <div class="info-company__name">
-            <p>718. Мраморная мука КМ-100б
-            </p>
-          </div>
-          <div class="info-company__photo">
-            <img src="{{ 'assets/photo/art700/746.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
-          </div>
-          <div class="info-company__size">
-            <p>23</p>
-          </div>
+        <div  *ngIf="under3" class="company__under">
+            <div class="company__title">
+                <span class="company__item">{{show23 ? '⯭' : '⯯'}}</span>
+                <h1 (click)="show23 = !show23">АРХИТЕКТУРНЫЕ КОНСТРУКЦИИ</h1>
+                <span class="company__item">{{show23 ? '⯭' : '⯯'}}</span>
+            </div>
+            <div *ngIf="show23"  class="company__lists">
+                <span class="company__item">{{more47 ? '⯭' : '⯯'}}</span>
+                <h1 (click)="more47 = !more47">Навесы</h1>
+                <span class="company__item">{{more47 ? '⯭' : '⯯'}}</span>
+            </div>
+            <div *ngIf="more47" class="company__info info-company">
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>473. Художественные навесы</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+            </div>
+            <div *ngIf="show23"  class="company__lists">
+                <span class="company__item">{{more48 ? '⯭' : '⯯'}}</span>
+                <h1 (click)="more48 = !more48">Ограды</h1>
+                <span class="company__item">{{more48 ? '⯭' : '⯯'}}</span>
+            </div>
+            <div *ngIf="more48" class="company__info info-company">
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>474. Художественные ограды</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+            </div>
+            <div *ngIf="show23"  class="company__lists">
+                <span class="company__item">{{more49 ? '⯭' : '⯯'}}</span>
+                <h1 (click)="more49 = !more49">Скульптуры</h1>
+                <span class="company__item">{{more49 ? '⯭' : '⯯'}}</span>
+            </div>
+            <div *ngIf="more49" class="company__info info-company">
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>475. Часовни</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>476. Кресты</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="info-company__card">
-          <div class="info-company__name">
-            <p>725. Мраморная мука КМ-315К
-            </p>
-          </div>
-          <div class="info-company__photo">
-            <img src="{{ 'assets/photo/art700/746.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
-          </div>
-          <div class="info-company__size">
-            <p>23</p>
-          </div>
+        <div  *ngIf="under3" class="company__under">
+            <div class="company__title">
+                <span class="company__item">{{show24 ? '⯭' : '⯯'}}</span>
+                <h1 (click)="show24 = !show24">РИТУАЛЬНЫЕ ИЗДЕЛИЯ</h1>
+                <span class="company__item">{{show24 ? '⯭' : '⯯'}}</span>
+            </div>
+            <div *ngIf="show24"  class="company__lists">
+                <span class="company__item">{{more50 ? '⯭' : '⯯'}}</span>
+                <h1 (click)="more50 = !more50">Акссесуары</h1>
+                <span class="company__item">{{more50 ? '⯭' : '⯯'}}</span>
+            </div>
+            <div *ngIf="more50" class="company__info info-company">
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>477. Молитвенники, книги</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>478. Иконы</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>479. Корзины</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>480. Лампады</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>481. Вазы</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="info-company__card">
-          <div class="info-company__name">
-            <p>727. Доломитовая мука 0-1 мм
-            </p>
-          </div>
-          <div class="info-company__photo">
-            <img src="{{ 'assets/photo/art700/746.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
-          </div>
-          <div class="info-company__size">
-            <p>23</p>
-          </div>
-        </div>
-        <div class="info-company__card">
-          <div class="info-company__name">
-            <p>732. Каролит 0,2-0,5 мм
-            </p>
-          </div>
-          <div class="info-company__photo">
-            <img src="{{ 'assets/photo/art700/746.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
-          </div>
-          <div class="info-company__size">
-            <p>23</p>
-          </div>
-        </div>
-        <div class="info-company__card">
-          <div class="info-company__name">
-            <p>746. Песок 0-2,5 мм
-            </p>
-          </div>
-          <div class="info-company__photo">
-            <img src="{{ 'assets/photo/art700/746.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
-          </div>
-          <div class="info-company__size">
-            <p>23</p>
-          </div>
-        </div>
-        <div class="info-company__card">
-          <div class="info-company__name">
-            <p>747. Песок 2,5-7 мм
-            </p>
-          </div>
-          <div class="info-company__photo">
-            <img src="{{ 'assets/photo/art700/746.png' }}" alt="Изображение" style="max-width:100%; height:auto;">
-          </div>
-          <div class="info-company__size">
-            <p>23</p>
-          </div>
-        </div>
+    </div>
+    <div class="company__box">
+      <div class="company__title">
+        <span class="company__item">{{under4 ? '⯭' : '⯯'}}</span>
+        <h1 (click)="under4 = !under4">РЕЛИГИОЗНЫЙ МРАМОР</h1>
+        <span class="company__item">{{under4 ? '⯭' : '⯯'}}</span>
       </div>
+        <div  *ngIf="under4" class="company__under">
+            <div class="company__title">
+                <span class="company__item">{{show25 ? '⯭' : '⯯'}}</span>
+                <h1 (click)="show25 = !show25">ОТДЕЛКА ХРАМОВ</h1>
+                <span class="company__item">{{show25 ? '⯭' : '⯯'}}</span>
+            </div>
+            <div *ngIf="show25"  class="company__lists">
+                <span class="company__item">{{more51 ? '⯭' : '⯯'}}</span>
+                <h1 (click)="more51 = !more51">Экстерьерное решение</h1>
+                <span class="company__item">{{more51 ? '⯭' : '⯯'}}</span>
+            </div>
+            <div *ngIf="more51" class="company__info info-company">
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>501. Религиозные фасады</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>502. Религиозные входные группы</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+            </div>
+            <div *ngIf="show25"  class="company__lists">
+                <span class="company__item">{{more52 ? '⯭' : '⯯'}}</span>
+                <h1 (click)="more52 = !more52">Интерьерные решения</h1>
+                <span class="company__item">{{more52 ? '⯭' : '⯯'}}</span>
+            </div>
+            <div *ngIf="more52" class="company__info info-company">
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>503. Помещения для молящихся, алтари</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+            </div>
+            <div *ngIf="show25"  class="company__lists">
+                <span class="company__item">{{more53 ? '⯭' : '⯯'}}</span>
+                <h1 (click)="more53 = !more53">Элементы архитектуры</h1>
+                <span class="company__item">{{more53 ? '⯭' : '⯯'}}</span>
+            </div>
+            <div *ngIf="more53" class="company__info info-company">
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>504. Архитектурные элементы</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div  *ngIf="under4" class="company__under">
+            <div class="company__title">
+                <span class="company__item">{{show26 ? '⯭' : '⯯'}}</span>
+                <h1 (click)="show26 = !show26">АРХИТЕКТУРНЫЕ СООРУЖЕНИЯ</h1>
+                <span class="company__item">{{show26 ? '⯭' : '⯯'}}</span>
+            </div>
+            <div *ngIf="show26" class="company__info info-company">
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>505. Эдикулы</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div  *ngIf="under4" class="company__under">
+            <div class="company__title">
+                <span class="company__item">{{show27 ? '⯭' : '⯯'}}</span>
+                <h1 (click)="show27 = !show27">РЕЛИГИОЗНОЕ УБРАНСТВО</h1>
+                <span class="company__item">{{show27 ? '⯭' : '⯯'}}</span>
+            </div>
+            <div *ngIf="show27"  class="company__lists">
+                <span class="company__item">{{more54 ? '⯭' : '⯯'}}</span>
+                <h1 (click)="more54 = !more54">Мебель</h1>
+                <span class="company__item">{{more54 ? '⯭' : '⯯'}}</span>
+            </div>
+            <div *ngIf="more54" class="company__info info-company">
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>506. Иконостасы</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>507. Киоты</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>508. Раки для мощей(ковчеги)</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>509. Купели</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>510. Престолы</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>511. Жертвенники</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>512. Аналои</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>513. Кафедры</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>514. Скамьи</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+            </div>
+            <div *ngIf="show27"  class="company__lists">
+                <span class="company__item">{{more55 ? '⯭' : '⯯'}}</span>
+                <h1 (click)="more55 = !more55">Скульптуры святых</h1>
+                <span class="company__item">{{more55 ? '⯭' : '⯯'}}</span>
+            </div>
+            <div *ngIf="more55" class="company__info info-company">
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>515. Скульптуры святых</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>516. Кресты на Голгофе</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>517. Распятие</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+            </div>
+            <div *ngIf="show27"  class="company__lists">
+                <span class="company__item">{{more56 ? '⯭' : '⯯'}}</span>
+                <h1 (click)="more56 = !more56">Рельефные панно</h1>
+                <span class="company__item">{{more56 ? '⯭' : '⯯'}}</span>
+            </div>
+            <div *ngIf="more56" class="company__info info-company">
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>518. Иконы</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>519. Картины</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>520. Таблички</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="company__box">
+      <div class="company__title">
+        <span class="company__item">{{under5 ? '⯭' : '⯯'}}</span>
+        <h1 (click)="under5 = !under5">ПРОИЗВОДСТВЕННЫЙ МРАМОР</h1>
+        <span class="company__item">{{under5 ? '⯭' : '⯯'}}</span>
+      </div>
+        <div  *ngIf="under5" class="company__under">
+            <div class="company__title">
+                <span class="company__item">{{show28 ? '⯭' : '⯯'}}</span>
+                <h1 (click)="show28 = !show28">ПРОИЗВОДСТВЕННОЕ СЫРЬЁ</h1>
+                <span class="company__item">{{show28 ? '⯭' : '⯯'}}</span>
+            </div>
+            <div *ngIf="show28"  class="company__lists">
+                <span class="company__item">{{more57 ? '⯭' : '⯯'}}</span>
+                <h1 (click)="more57 = !more57">Блоки</h1>
+                <span class="company__item">{{more57 ? '⯭' : '⯯'}}</span>
+            </div>
+            <div *ngIf="more57" class="company__info info-company">
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>601. Крупногабаритные глыбы</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>602. Высшего сорта</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>603. 1 сорта</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>604. 2 сорта</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>605. 3 сорта</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>606. Производственные остатки</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div  *ngIf="under5" class="company__under">
+            <div class="company__title">
+                <span class="company__item">{{show29 ? '⯭' : '⯯'}}</span>
+                <h1 (click)="show29 = !show29">ПРОИЗВОДСТВЕННЫЕ ЗАГОТОВКИ</h1>
+                <span class="company__item">{{show29 ? '⯭' : '⯯'}}</span>
+            </div>
+            <div *ngIf="show29"  class="company__lists">
+                <span class="company__item">{{more58 ? '⯭' : '⯯'}}</span>
+                <h1 (click)="more58 = !more58">Слэбы</h1>
+                <span class="company__item">{{more58 ? '⯭' : '⯯'}}</span>
+            </div>
+            <div *ngIf="more58" class="company__info info-company">
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>607. Слэбы h=50 мм</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>608. Слэбы h=40 мм</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>609. Слэбы h=30 мм</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>610. Слэбы h=20 мм</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+            </div>
+            <div *ngIf="show29"  class="company__lists">
+                <span class="company__item">{{more59 ? '⯭' : '⯯'}}</span>
+                <h1 (click)="more59 = !more59">Загатовки</h1>
+                <span class="company__item">{{more59 ? '⯭' : '⯯'}}</span>
+            </div>
+            <div *ngIf="more59" class="company__info info-company">
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>611. Фигурные ручной обработки</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>612. Точеные изделия</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>613. Рельефные фрезерованые</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>614. Прямоугольные с фаской</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>615. Прямоугольные заготовки</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="company__box">
+      <div class="company__title">
+        <span class="company__item">{{under6 ? '⯭' : '⯯'}}</span>
+        <h1 (click)="under6 = !under6">ПРОМЫШЛЕННЫЙ МРАМОР</h1>
+        <span class="company__item">{{under6 ? '⯭' : '⯯'}}</span>
+      </div>
+        <div  *ngIf="under6" class="company__under">
+            <div class="company__title">
+                <span class="company__item">{{show30 ? '⯭' : '⯯'}}</span>
+                <h1 (click)="show30 = !show30">ПРОИЗВОДСТВЕННОЕ СЫРЬЁ</h1>
+                <span class="company__item">{{show30 ? '⯭' : '⯯'}}</span>
+            </div>
+            <div *ngIf="show30"  class="company__lists">
+                <span class="company__item">{{more60 ? '⯭' : '⯯'}}</span>
+                <h1 (click)="more60 = !more60">МИКРОКАЛЬЦИТ</h1>
+                <span class="company__item">{{more60 ? '⯭' : '⯯'}}</span>
+            </div>
+            <div *ngIf="more60" class="company__info info-company">
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>701. Мраморная мука КМ-1</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>702. Мраморная мука КМ-1S</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>703. Мраморная мука КМ-2</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>704. Мраморная мука КМ-2S</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>705. Мраморная мука КМ-2б</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>706. Мраморная мука КМ-5</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>707. Мраморная мука КМ-5S</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>708. Мраморная мука КМ-5б</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>709. Мраморная мука КМ-10</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>710. Мраморная мука КМ-10б</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>711. Мраморная мука КМ-40</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>712. Мраморная мука КМ-40б</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>713. Мраморная мука КМ-60</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>714. Мраморная мука КМ-60б</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>715. Мраморная мука КМ-80</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>716. Мраморная мука КМ-80б</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>717. Мраморная мука КМ-100</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>718. Мраморная мука КМ-100б</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>719. Мраморная мука КМ-100К</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>720. Мраморная мука КМ-160</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>721. Мраморная мука КМ-160б</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>722. Мраморная мука КМ-160К</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>723. Мраморная мука КМ-200</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>724. Мраморная мука КМ-315</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>725. Мраморная мука КМ-315К</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>726. Мраморная мука КМ-500</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+            </div>
+            <div *ngIf="show30"  class="company__lists">
+                <span class="company__item">{{more61 ? '⯭' : '⯯'}}</span>
+                <h1 (click)="more61 = !more61">Доломитовая мука</h1>
+                <span class="company__item">{{more61 ? '⯭' : '⯯'}}</span>
+            </div>
+            <div *ngIf="more61" class="company__info info-company">
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>727. Доломитовая мука 0-1 мм</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div  *ngIf="under6" class="company__under">
+            <div class="company__title">
+                <span class="company__item">{{show31 ? '⯭' : '⯯'}}</span>
+                <h1 (click)="show31 = !show31">Миниральные порошки</h1>
+                <span class="company__item">{{show31 ? '⯭' : '⯯'}}</span>
+            </div>
+            <div *ngIf="show31"  class="company__lists">
+                <span class="company__item">{{more62 ? '⯭' : '⯯'}}</span>
+                <h1 (click)="more62 = !more62">Активированые</h1>
+                <span class="company__item">{{more62 ? '⯭' : '⯯'}}</span>
+            </div>
+            <div *ngIf="more62" class="company__info info-company">
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>728. Минеральны порошок МП-1</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+            </div>
+            <div *ngIf="show31"  class="company__lists">
+                <span class="company__item">{{more63 ? '⯭' : '⯯'}}</span>
+                <h1 (click)="more63 = !more63">Неактивированные</h1>
+                <span class="company__item">{{more63 ? '⯭' : '⯯'}}</span>
+            </div>
+            <div *ngIf="more63" class="company__info info-company">
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>729. Минеральный порошок МП-1</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>730. Минеральный порошок МП-2</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+            </div>
+            <div *ngIf="show31"  class="company__lists">
+                <span class="company__item">{{more64 ? '⯭' : '⯯'}}</span>
+                <h1 (click)="more64 = !more64">Карбонатный утяжелитель</h1>
+                <span class="company__item">{{more64 ? '⯭' : '⯯'}}</span>
+            </div>
+            <div *ngIf="more64" class="company__info info-company">
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>731. Карбонатный утяжелитель</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div  *ngIf="under6" class="company__under">
+            <div class="company__title">
+                <span class="company__item">{{show32 ? '⯭' : '⯯'}}</span>
+                <h1 (click)="show32 = !show32">МРАМОРНАЯ КРОШКА</h1>
+                <span class="company__item">{{show32 ? '⯭' : '⯯'}}</span>
+            </div>
+            <div *ngIf="show32"  class="company__lists">
+                <span class="company__item">{{more65 ? '⯭' : '⯯'}}</span>
+                <h1 (click)="more65 = !more65">Каролиты</h1>
+                <span class="company__item">{{more65 ? '⯭' : '⯯'}}</span>
+            </div>
+            <div *ngIf="more65" class="company__info info-company">
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>732. Каролит 0,2-0,5 мм</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>733. Каролит 0,5-1 мм</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>734. Каролит 1-1,5 мм</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>735. Каролит 1,5-2 мм</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>736. Каролит 1-2 мм</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>737. Каролит 2-3 мм</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>738. Каролит 3-5 мм</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+            </div>
+            <div *ngIf="show32"  class="company__lists">
+                <span class="company__item">{{more66 ? '⯭' : '⯯'}}</span>
+                <h1 (click)="more66 = !more66">Мраморный песок</h1>
+                <span class="company__item">{{more66 ? '⯭' : '⯯'}}</span>
+            </div>
+            <div *ngIf="more66" class="company__info info-company">
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>739. Песок 0-1 мм</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>740. Песок 1-3 мм</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>741. Песок 0-3 мм</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>742. Песок 3-5 мм</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>743. Песок 0-5 мм</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>746. Песок 0-7 мм</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>745. Песок 1-1,5 мм</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>746. Песок 0-2,5 мм</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+                <div class="info-company__card">
+                    <div class="info-company__name">
+                        <p>747. Песок 2,5-7 мм</p>
+                    </div>
+
+                    <div class="info-company__size">
+                        <p>23</p>
+                    </div>
+                </div>
+            </div>
+        </div>
       </div>
     </div>
   </div>
